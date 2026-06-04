@@ -77,6 +77,11 @@ claude-code/
 2. `docs/Component_Contracts.md`에서 컴포넌트 Contract 확인
 3. Figma 디자인 시스템에서 컴포넌트 가져올 때 `node.description`도 함께 읽어 용도/제약사항 파악
 4. 파악한 내용을 바탕으로 화면 조합
+5. 화면 완성 후 외부 Frame 리사이즈 — `pageInst.y + pageInst.height` (statusBar 오프셋 포함)
+   ```js
+   const pageInst = clone.findOne(n => n.name === "Page" && n.type === "INSTANCE");
+   clone.resize(clone.width, pageInst.y + pageInst.height);
+   ```
 
 ### 주의사항
 - `Status: Internal` 컴포넌트는 화면에 절대 노출하지 않는다
@@ -106,4 +111,5 @@ claude-code/
 | `docs/Component_Contracts.md` | 디자이너 | 컴포넌트 추가/변경 시 |
 | `docs/Component_Contract_Convention.md` | 디자이너 | 컨벤션 변경 시 |
 | `docs/Missing_Component_Workflow.md` | 디자이너 | 워크플로우 변경 시 |
+| `docs/Figma_Design_Build_Guide.md` | 디자이너 + Claude | MCP 빌드 패턴 변경/추가 시 |
 | `tokens/` | 디자이너 | 토큰 변경 시 |
