@@ -40,7 +40,8 @@ claude-code/
 ├── docs/                              ← Claude 참조 문서
 │   ├── Component_Contracts.md
 │   ├── Component_Contract_Convention.md
-│   └── Missing_Component_Workflow.md
+│   ├── Missing_Component_Workflow.md
+│   └── Figma_Design_Build_Guide.md
 ├── tokens/                            ← 토큰 파일
 │   ├── primitive_color.json
 │   ├── semantic_theme_light.json
@@ -68,20 +69,25 @@ claude-code/
 ### 참고 문서
 - **컴포넌트 명세**: `docs/Component_Contracts.md` — 사용 가능한 컴포넌트 전체 목록, 각 prop과 variant
 - **누락 컴포넌트 처리**: `docs/Missing_Component_Workflow.md` — 없는 컴포넌트가 있을 때 판단 기준과 처리 방법
+- **Figma 디자인 빌드 가이드**: `docs/Figma_Design_Build_Guide.md` — SLOT/INSTANCE_SWAP 처리, 클론 워크플로, 폰트 패턴
 - **Figma 디자인 시스템**: https://www.figma.com/design/wJaqzyxIazITPQ7ULFJY4o/Platform-Design-System — 실제 컴포넌트를 가져올 소스
 
 ### 작업 순서
 1. 명령 수신 → 작업 계획 작성 → 사용자 OK 확인
 2. `docs/Component_Contracts.md`에서 컴포넌트 Contract 확인
-3. Figma 디자인 시스템에서 컴포넌트 가져와 화면 조합
+3. Figma 디자인 시스템에서 컴포넌트 가져올 때 `node.description`도 함께 읽어 용도/제약사항 파악
+4. 파악한 내용을 바탕으로 화면 조합
 
 ### 주의사항
 - `Status: Internal` 컴포넌트는 화면에 절대 노출하지 않는다
 - `Status: Experimental` 컴포넌트는 신규 화면에서 직접 의존하지 않는다
 - `contentPaddingX: none`이 명시된 섹션만 full-width로 처리한다
-- 커스텀 슬롯(`custom: true`)은 명령에 명시된 경우에만 사용한다
 - 명령에 없는 텍스트/이미지/구조를 임의로 추가하지 않는다
 - 이전 화면 내용을 재활용하지 않는다
+
+### Slot 처리 규칙
+1. **우선: swapComponent** — Slot 안 인스턴스를 preferred instances의 DS 컴포넌트로 교체
+2. **차선: 커스텀 디자인** — 맞는 DS 컴포넌트가 없을 때만 Slot 내부에 커스텀 Frame 배치 허용
 
 ---
 
