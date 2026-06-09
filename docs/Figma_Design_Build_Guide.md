@@ -8,12 +8,13 @@
 ## 목차
 
 1. [기본 원칙](#1-기본-원칙)
-2. [클론 워크플로](#2-클론-워크플로)
+2. [빌드 워크플로](#2-빌드-워크플로)
 3. [INSTANCE_SWAP 처리 규칙](#3-instance_swap-처리-규칙)
 4. [Slot 처리 규칙](#4-slot-처리-규칙)
 5. [Section 속성 처리](#5-section-속성-처리)
 6. [Inter 폰트 우선 접근](#6-inter-폰트-우선-접근)
-7. [컴포넌트별 주의사항](#7-컴포넌트별-주의사항)
+7. [Page/Section append 실패 대응](#7-pagesection-append-실패-대응)
+8. [컴포넌트별 주의사항](#8-컴포넌트별-주의사항)
 
 ---
 
@@ -26,32 +27,83 @@
 
 ---
 
-## 2. 클론 워크플로
+## 2. 빌드 워크플로
 
-Page DS 컴포넌트(Section Group 포함)는 직접 생성 시 Pretendard Variable 폰트 제약으로 append가 차단된다. **기존 파일에 있는 외부 FRAME을 클론해서 구조를 가져오는 방식**을 사용한다.
+Page DS 컴포넌트(Section Group 포함)는 직접 생성 시 Pretendard Variable 폰트 제약으로 append가 차단된다. **파일 내 아무 Page 인스턴스나 찾아 클론 후 즉시 blank reset하는 방식**을 사용한다.
+
+소스 화면의 콘텐츠에 의존하지 않으므로 어떤 파일/페이지/사용자가 작업해도 항상 동일한 빈 구조에서 시작할 수 있다.
+
+### Step 1: 아무 Page 인스턴스 찾아 클론 + blank reset
 
 ```js
-// 1. 소스 페이지로 이동 후 외부 FRAME 클론
-const sourcePage = figma.root.children.find(p => p.name === "소스 페이지명");
-await figma.setCurrentPageAsync(sourcePage);
-const sourceFrame = await figma.getNodeByIdAsync("FRAME_ID");
-const clone = sourceFrame.clone();
-
-// 2. 대상 페이지로 이동 (FRAME은 appendChild 가능)
+// 1. 대상 페이지로 이동
 const targetPage = figma.root.children.find(p => p.name === "대상 페이지명");
+await figma.setCurrentPageAsync(targetPage);
+
+// 2. 파일 내 아무 Page 인스턴스를 감싸는 FRAME 찾기 (어떤 화면이든 무관)
+let sourceFrame = null;
+for (const page of figma.root.children) {
+  if (page.id === targetPage.id) continue;
+  await figma.setCurrentPageAsync(page);
+  sourceFrame = page.findOne(n =>
+    n.type === "FRAME" && n.findOne(c => c.name === "Page" && c.type === "INSTANCE")
+  );
+  if (sourceFrame) break;
+}
+await figma.setCurrentPageAsync(targetPage);
+
+// 3. 클론 후 대상 페이지로 이동
+const clone = sourceFrame.clone();
 targetPage.appendChild(clone);
-clone.x = 0;
-clone.y = 0;
 clone.name = "화면 이름";
 
-// 3. 이후 대상 페이지에서 콘텐츠 수정
-const targetPage2 = figma.root.children.find(p => p.name === "대상 페이지명");
-await figma.setCurrentPageAsync(targetPage2);
+// 4. 기존 프레임과 겹치지 않도록 우측 배치
+let maxX = 0;
+for (const child of targetPage.children) {
+  if (child.id !== clone.id) maxX = Math.max(maxX, child.x + child.width);
+}
+clone.x = maxX > 0 ? maxX + 80 : 0;
+clone.y = 0;
+
+// 5. Blank reset — 소스 콘텐츠 무관하게 항상 동일한 빈 구조로 초기화
+const navBar = clone.findOne(n => n.name === "Navigation Bar" && n.type === "INSTANCE");
+const titleKey = Object.keys(navBar.componentProperties).find(k => k.startsWith("title"));
+navBar.setProperties({ [titleKey]: "", "leftItem": "none", "rightItem": "none" });
+
+const sg = clone.findOne(n => n.name === "Section Group" && n.type === "INSTANCE");
+sg.setProperties({ "count": "5" });
+
+const dsImageComp = await figma.importComponentByKeyAsync("6155ef9924b9b5eb89ddb6b9c448cd4c0095beec"); // DSImage fill/product
+
+for (let i = 1; i <= 5; i++) {
+  const section = clone.findOne(n => n.name === `Section${i}` && n.type === "INSTANCE");
+  if (!section) continue;
+  const showHeaderKey = Object.keys(section.componentProperties).find(k => k.startsWith("showHeader"));
+  const showFooterKey = Object.keys(section.componentProperties).find(k => k.startsWith("showFooter"));
+  section.setProperties({
+    "contentPaddingX": "page",
+    [showHeaderKey]: false,
+    [showFooterKey]: false
+  });
+  // contentSlot을 DSImage(기본 placeholder)로 초기화
+  const contentSlot = section.findOne(n => n.name === "contentSlot" && n.type === "SLOT");
+  const slotInst = contentSlot?.children[0];
+  if (slotInst?.type === "INSTANCE") slotInst.swapComponent(dsImageComp);
+}
 ```
 
-**주의:**
-- Page DS 인스턴스 자체가 아니라 그것을 감싸는 **외부 FRAME**을 클론한다.
-- 클론 후 콘텐츠(텍스트, 이미지, 슬롯 내용)는 반드시 명령 기준으로 새로 설정한다.
+### Step 2: 화면 구성
+
+blank reset 완료 후 명령 기준으로 NavBar, SectionGroup count, 각 Section 콘텐츠를 설정한다.
+
+### Step 3: 완성 후 Frame 리사이즈 (필수)
+
+SectionGroup count 변경으로 실제 높이가 달라지므로 항상 실행한다.
+
+```js
+const pageInst = clone.findOne(n => n.name === "Page" && n.type === "INSTANCE");
+clone.resize(clone.width, pageInst.y + pageInst.height);
+```
 
 ---
 
@@ -227,13 +279,57 @@ parentFrame.appendChild(btnInst); // ✅
 
 ---
 
-## 7. 컴포넌트별 주의사항
+## 7. Page/Section append 실패 대응
+
+MCP 환경에서는 `Page` 또는 `Section` 인스턴스를 직접 생성해서 append할 때 Pretendard Variable 폰트가 로드되지 않아 실패할 수 있다.
+
+대표 오류:
+
+```text
+appendChild: unloaded font "Pretendard Variable Medium"
+appendChild: unloaded font "Pretendard Variable Bold"
+```
+
+### 발생 조건
+
+- `Page` / `Section` 기본 인스턴스 내부에 `SlotPlaceholder(제거 후 사용)`이 남아 있다.
+- `SlotPlaceholder` 또는 기본 텍스트 노드가 Pretendard Variable `Bold` / `Medium`을 사용한다.
+- `setProperties()`로 TEXT prop을 수정하려고 할 때 컴포넌트가 미로드 Pretendard 폰트를 참조한다.
+- Slot에 새 DS 컴포넌트를 append하는 순간 부모 `Section` 내부의 남은 Pretendard 텍스트가 다시 검사된다.
+
+### 권장 대응 순서
+
+1. **정상 DS Page 외부 Frame 클론**
+   - 가장 안정적인 방식이다.
+   - 같은 파일 안에 이미 정상 배치된 `Page` 외부 Frame이 있으면 그것을 클론한다.
+   - 클론 후 즉시 blank reset → 명령에 맞게 navigation, section, slot content, 텍스트를 전부 새로 설정한다.
+
+2. **append 전 SlotPlaceholder 제거 및 실제 DS 콘텐츠 선배치**
+   - 직접 생성이 불가피하면 `Page` / `Section`을 canvas에 append하기 전에 `headerSlot`, `contentSlot`, `footerSlot`의 기본 placeholder를 제거한다.
+   - 실제 `sectionHeader`, `ProductCard Grid`, `Button` 등 DS 콘텐츠를 먼저 넣고, 모든 TEXT 노드를 Inter로 바꾼 뒤 append를 시도한다.
+   - 순서: `variant/boolean prop 설정 → Inter 폰트 정규화 → characters 수정 → append`
+
+3. **실패 시 중단하고 사용자에게 보고**
+   - `Page` / `Section` append가 계속 실패하면 완료된 것처럼 말하지 않는다.
+   - DS 하위 컴포넌트를 외부 Frame에 조합하는 임시 우회는 가능하지만, `Page` 컴포넌트 기반이 아님을 명확히 보고한다.
+
+### 금지
+
+- `SlotPlaceholder(제거 후 사용)`를 실제 화면에 노출하지 않는다.
+- Page/Section 없이 외부 Frame으로 우회한 결과를 `Page` 컴포넌트로 만든 화면이라고 설명하지 않는다.
+- 오류를 무시하고 커스텀 Frame/Shape 중심으로 재작성하지 않는다. DS 하위 컴포넌트를 최대한 유지한다.
+
+---
+
+## 8. 컴포넌트별 주의사항
 
 ### ProductCard Grid
 
 - DS 내부적으로 DSGrid 기반 → rows prop으로 행 수 조절 가능
 - 8개 이상 상품이 필요할 때 Grid 두 개 쌓지 말고 rows 조절 사용
-- variants: `twoColumn` (4-6개 권장) / `threeColumn` (6-9개 권장)
+- variants: `grid=two` / `grid=three`
+- `grid=two`는 `ProductCard TwoColumn`, `grid=three`는 `ProductCard ThreeColumn`을 사용한다.
+- `ProductCard Thumbnail`, `ProductCard Info TwoColumn`, `ProductCard Info ThreeColumn`, `ProductCard Brand Badge`, `ProductCard Favorite Toggle`은 Internal 부품 — 화면 조합 시 직접 배치하지 않는다.
 
 ### NavigationBar
 
@@ -251,3 +347,14 @@ parentFrame.appendChild(btnInst); // ✅
 - `contentPaddingX`: `page`(좌우 패딩 있음) / `none`(full-width, hero 이미지 등)
 - `showHeader` / `showFooter`: 항상 명시적으로 설정 (기본값에 의존하지 않음)
 - SLOT 안 노드 타입 확인 필수: INSTANCE면 swapComponent, FRAME이면 remove 후 재배치
+
+### DSIcon
+
+- 컴포넌트화 대상이 아닌 1회성 커스텀 슬롯에서만 사용한다.
+- Button, Navigation Bar, Toggle, Badge 등 기존 컴포넌트 내부 아이콘에는 직접 사용하지 않는다.
+- 반복 사용되거나 2개 이상 화면에서 재사용될 가능성이 있는 아이콘 UI는 별도 컴포넌트화를 검토한다.
+- `icon`은 INSTANCE_SWAP으로 교체한다.
+- `sic.*`: tint 적용 대상인 단색 시스템 아이콘 — `tint=neutral | brand | positive | inverse` 사용
+- `iic.*`: 브랜드/서비스 아이콘처럼 원본 컬러 유지가 필요한 아이콘 — `tint=none` 사용
+- `tint=none`: icon 슬롯에 들어온 소스 컴포넌트의 원본 fill/binding을 그대로 따른다.
+- `tint=inverse`: `sic.*` 아이콘에 `color.fg.neutral.on-solid` 바인딩 (어두운 배경 위 아이콘)

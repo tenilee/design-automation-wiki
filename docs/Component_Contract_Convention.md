@@ -42,13 +42,13 @@ Owner        → 컴포넌트가 속한 Figma 파일명
 | `Beta` | 사용 가능하나 스펙 변경 가능성 있음 |
 | `Experimental` | 실험적 도입 단계, 제거 또는 교체 가능성 있음 |
 | `Deprecated` | 사용 중단 예정, `Replacement` 필드에 대체 방법 명시 |
-| `Internal` | 디자인 시스템 제작 전용, 실제 화면·테스트 지면·published pattern에 사용 불가 |
+| `Internal` | 디자인 시스템 제작 전용 하위 부품, 실제 화면·테스트 지면에서 직접 사용 불가 |
 
 **AI 동작 기준**
 - `Core` / `Beta` — 화면 조합에 사용 가능
 - `Experimental` — 기존 컴포넌트가 참조하는 경우에만 허용, 신규 화면에서 직접 의존 금지
 - `Deprecated` — 신규 화면에 사용 불가, `Replacement`의 컴포넌트로 대체
-- `Internal` — 화면 조합에 절대 사용 불가, 노출 금지
+- `Internal` — 화면 조합에 직접 사용 불가. 단, `Core` 컴포넌트의 내부 composition으로 포함되는 것은 허용
 
 ---
 
@@ -241,23 +241,47 @@ Owner: Platform Design System
 
 ```
 Status: Core
-Purpose: 상품 썸네일, 가격, 할인율, 브랜드 배지를 조합해 상품 하나를 표현하는 카드입니다.
+Purpose: 2열 상품 리스트에서 사용하는 ProductCard 마스터 컴포넌트입니다.
 Use when:
-  상품 목록, 큐레이션 그리드, 캐러셀에서 개별 상품을 표시할 때.
+  페이지 본문에서 2column 상품 그리드 또는 2열 상품 리스트를 구성할 때.
 Avoid when:
-  상품 상세 페이지 메인 영역에는 사용하지 않습니다.
-  3개 이상의 정보를 추가해야 한다면 별도 컴포넌트를 검토합니다.
+  3column 상품 리스트가 필요한 경우에는 ProductCard ThreeColumn을 사용합니다.
 Key props:
-- column [required] two-column | three-column → 그리드 열 수에 맞춰 선택
-- image [required] url
-- title [required] string
-- price [required] number → 원 단위
-- originalPrice [optional] number → 정가, discountRate와 함께 사용
-- discountRate [optional] number → 0–100, originalPrice와 함께 사용
-- condition [optional] 새상품 | 중고
+- image [required] url → thumbnail image fill
+- title [required] string → title label
+- price [required] number → price label
+- discountRate [optional] number
 - brandBadge [optional] edition1 | mercari | care
-- favoriteToggle [optional] boolean → 기본값 false
-Composition: none
+- favorite [optional] boolean → 기본값 false
+Composition:
+- ProductCard Thumbnail [1]
+- ProductCard Info TwoColumn [1]
+Order: fixed (ProductCard Thumbnail → ProductCard Info TwoColumn)
+Owner: Platform Design System
+```
+
+---
+
+### Internal 하위 부품 — ProductCard Thumbnail
+
+```
+Status: Internal
+Purpose: ProductCard 내부에서 상품 이미지를 표시하는 썸네일 컴포넌트입니다.
+Use when:
+  ProductCard TwoColumn / ThreeColumn 내부에서 상품 이미지, AD 뱃지, 브랜드 뱃지, 찜 상태를 함께 표시할 때.
+Avoid when:
+  화면에서 썸네일을 단독으로 직접 배치해야 하는 경우에는 DSImage 또는 별도 이미지 패턴을 사용합니다.
+Replacement: ProductCard TwoColumn 또는 ProductCard ThreeColumn 내부 composition으로 사용합니다.
+Key props:
+- favorite [required] off | on
+- brandBadge [optional] boolean → 브랜드 뱃지 노출 여부
+- adBadge [optional] boolean → AD 뱃지 노출 여부
+Composition:
+- DSImage [1]
+- Ad Badge [0–1]
+- ProductCard Brand Badge [0–1]
+- ProductCard Favorite Toggle [1]
+Order: fixed overlay
 Owner: Platform Design System
 ```
 
@@ -283,19 +307,19 @@ Owner: Platform Design System
 
 ---
 
-### Experimental 컴포넌트 — DSIcon
+### Beta 컴포넌트 — DSIcon
 
 ```
-Status: Experimental
-Purpose: 시스템 아이콘을 임시로 표준 크기와 tint 규칙에 맞춰 표시합니다.
-Use when: 기존 컴포넌트가 DSIcon 구조를 아직 참조하는 경우에만 사용합니다.
-Avoid when: 신규 컴포넌트에서 직접 의존하지 않습니다.
-Note: This component may be removed or replaced.
+Status: Beta
+Purpose: 컴포넌트화 대상이 아닌 1회성 커스텀 슬롯에서 DS 아이콘 소스를 표준 size와 tint 규칙에 맞춰 표시하는 아이콘 래퍼입니다.
+Use when: 1회성 커스텀 슬롯 안에서 시스템 아이콘 또는 원본 컬러 유지 아이콘을 단독으로 배치해야 할 때 사용합니다.
+Avoid when: Button, Navigation Bar, Toggle, Badge 등 기존 컴포넌트 내부에 포함되는 아이콘에는 사용하지 않습니다. 반복 사용되거나 2개 이상 화면에서 재사용될 가능성이 있는 아이콘 UI는 별도 컴포넌트화를 검토합니다.
 Key props:
-- icon [required] string → 아이콘 이름
-- size [required] {sizing.icon.*}
-- color [optional] color.fg.*
-Composition: none
+- size [required] xxxxs | xxxs | xxs | xs | sm | md | lg | xl | xxl | xxxl
+- tint [required] none | neutral | brand | positive | inverse
+- icon [required] INSTANCE_SWAP → sic.* 또는 iic.* DS 아이콘 소스
+Composition:
+- icon slot [1]
 Owner: Platform Design System
 ```
 

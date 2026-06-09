@@ -23,7 +23,13 @@
 - [sectionHeader](#sectionheader)
 - [productCardGrid](#productcardgrid)
 - [productCardCarousel](#productcardcarousel)
-- [productCard](#productcard)
+- [ProductCard TwoColumn](#productcard-twocolumn)
+- [ProductCard ThreeColumn](#productcard-threecolumn)
+- [ProductCard Thumbnail](#productcard-thumbnail)
+- [ProductCard Brand Badge](#productcard-brand-badge)
+- [ProductCard Favorite Toggle](#productcard-favorite-toggle)
+- [ProductCard Info TwoColumn](#productcard-info-twocolumn)
+- [ProductCard Info ThreeColumn](#productcard-info-threecolumn)
 - [Grid](#grid)
 - [Carousel](#carousel)
 - [textBlock](#textblock)
@@ -161,16 +167,16 @@ Owner: Platform Design System
 
 ```
 Status: Core
-Purpose: productCard를 2열 또는 3열 그리드로 배열한 화면 조합용 컴포넌트입니다.
+Purpose: ProductCard를 정해진 컬럼 규칙에 따라 배치하는 상품 그리드 패턴입니다.
 Use when: 상품 목록 화면, 큐레이션 화면의 상품 그리드 섹션.
 Avoid when: 가로 스크롤 상품 목록에는 productCardCarousel을 사용합니다.
 Key props:
-- grid [required] two-column | three-column
-  -> two-column: 상품을 크게 보여줄 때, 4-6개 권장
-  -> three-column: 상품을 많이 보여줄 때, 6-9개 권장
+- grid [required] two | three
+  -> two: ProductCard TwoColumn을 2열로 배치
+  -> three: ProductCard ThreeColumn을 3열로 배치
 - products [required] ProductData[] -> ProductCard 인스턴스에 바인딩할 상품 데이터
 Composition:
-- productCard [2+]
+- ProductCard TwoColumn | ProductCard ThreeColumn [2+]
 Order: flexible
 Owner: Platform Design System
 ```
@@ -193,37 +199,171 @@ Owner: Platform Design System
 
 ```
 Status: Core
-Purpose: productCard를 가로 스크롤로 나열한 화면 조합용 컴포넌트입니다.
+Purpose: ProductCard를 가로 스크롤로 나열하는 상품 캐러셀 패턴입니다.
 Use when: 관련 상품, 추천 상품처럼 가로 스크롤로 탐색하는 상품 목록.
 Avoid when: 세로 목록 형태의 상품 나열에는 productCardGrid를 사용합니다.
 Key props:
 - products [required] ProductData[] -> ProductCard 인스턴스에 바인딩할 상품 데이터, 3개 이상 권장
 Composition:
-- productCard [3+]
+- ProductCard ThreeColumn [3+] 또는 content instance swap
 Order: flexible
 Owner: Platform Design System
 ```
 
 ---
 
-## productCard
+## ProductCard TwoColumn
 
 ```
 Status: Core
-Purpose: 상품 썸네일, 가격, 할인율, 브랜드 배지를 조합해 상품 하나를 표현하는 카드입니다.
-Use when: productCardGrid 또는 productCardCarousel 내부에서 개별 상품을 표시할 때.
-Avoid when: 상품 상세 페이지 메인 영역에는 사용하지 않습니다.
+Purpose: 2열 상품 리스트에서 사용하는 ProductCard 마스터 컴포넌트입니다.
+Use when: 페이지 본문에서 2column 상품 그리드 또는 2열 상품 리스트를 구성할 때.
+Avoid when: 3column 상품 리스트가 필요한 경우에는 ProductCard ThreeColumn을 사용합니다.
 Key props:
-- column [required] two-column | three-column
-  -> productCardGrid의 grid prop과 반드시 일치시킵니다.
 - image [required] url -> thumbnail image fill
 - title [required] string -> title label
 - price [required] number -> price label
-- originalPrice [optional] number
-- discountRate [optional] number -> originalPrice가 있으면 함께 작성
-- condition [optional] 새상품 | 중고
+- discountRate [optional] number
 - brandBadge [optional] edition1 | mercari | care
-Composition: none (thumbnail + product info 내부 구조 고정)
+- favorite [optional] boolean -> 기본값 false
+Composition:
+- ProductCard Thumbnail [1]
+- ProductCard Info TwoColumn [1]
+Order: fixed (ProductCard Thumbnail -> ProductCard Info TwoColumn)
+Owner: Platform Design System
+```
+
+---
+
+## ProductCard ThreeColumn
+
+```
+Status: Core
+Purpose: 3열 상품 리스트에서 사용하는 ProductCard 마스터 컴포넌트입니다.
+Use when: 페이지 본문에서 3column 상품 그리드 또는 더 조밀한 상품 리스트를 구성할 때.
+Avoid when: 2column 상품 리스트가 필요한 경우에는 ProductCard TwoColumn을 사용합니다.
+Key props:
+- image [required] url -> thumbnail image fill
+- title [required] string -> title label
+- price [required] number -> price label
+- discountRate [optional] number
+- brandBadge [optional] edition1 | mercari | care
+- favorite [optional] boolean -> 기본값 false
+Composition:
+- ProductCard Thumbnail [1]
+- ProductCard Info ThreeColumn [1]
+Order: fixed (ProductCard Thumbnail -> ProductCard Info ThreeColumn)
+Owner: Platform Design System
+```
+
+---
+
+## ProductCard Thumbnail
+
+```
+Status: Internal
+Purpose: ProductCard 내부에서 상품 이미지를 표시하는 썸네일 컴포넌트입니다.
+Use when: ProductCard TwoColumn / ThreeColumn 내부에서 상품 이미지, AD 뱃지, 브랜드 뱃지, 찜 상태를 함께 표시할 때.
+Avoid when: 화면에서 썸네일을 단독으로 직접 배치해야 하는 경우에는 DSImage 또는 별도 이미지 패턴을 사용합니다.
+Replacement: ProductCard TwoColumn 또는 ProductCard ThreeColumn 내부 composition으로 사용합니다.
+Key props:
+- favorite [required] off | on
+- brandBadge [optional] boolean -> 브랜드 뱃지 노출 여부
+- adBadge [optional] boolean -> AD 뱃지 노출 여부
+Composition:
+- DSImage [1]
+- Ad Badge [0-1]
+- ProductCard Brand Badge [0-1]
+- ProductCard Favorite Toggle [1]
+Order: fixed overlay
+Owner: Platform Design System
+```
+
+---
+
+## ProductCard Brand Badge
+
+```
+Status: Internal
+Purpose: ProductCard Thumbnail 위에 표시되는 브랜드/서비스 식별 뱃지 컴포넌트입니다.
+Use when: 상품 이미지 위에 edition1, care, mercari 등 브랜드/서비스 뱃지를 표시할 때.
+Avoid when: 브랜드 뱃지가 필요 없는 경우에는 ProductCard Thumbnail의 brandBadge를 false로 설정합니다.
+Replacement: ProductCard Thumbnail의 brandBadge prop과 nested brand variant로 제어합니다.
+Key props:
+- brand [required] edition1 | care | mercari
+Composition: none
+Owner: Platform Design System
+```
+
+---
+
+## ProductCard Favorite Toggle
+
+```
+Status: Internal
+Purpose: ProductCard Thumbnail 위에 표시되는 찜 상태 토글 컴포넌트입니다.
+Use when: 상품 카드에서 찜하지 않음/찜함 상태를 표시할 때.
+Avoid when: ProductCard 외부의 일반 아이콘 토글에는 iconToggle을 직접 사용합니다.
+Replacement: ProductCard Thumbnail의 favorite prop으로 제어합니다.
+Key props:
+- selected [required] off | on
+Composition:
+- iconToggle [1] -> variant=neutralSolid, shape=none, size=xl
+Order: fixed
+Owner: Platform Design System
+```
+
+---
+
+## ProductCard Info TwoColumn
+
+```
+Status: Internal
+Purpose: ProductCard TwoColumn에 들어가는 2column 전용 상품 정보 컴포넌트입니다.
+Use when: 2column 상품 카드에서 상품명, 가격, 할인율, 뱃지, 보조 정보, 등록 시간, 채팅 수, 북마크 수를 표시할 때.
+Avoid when: ProductCard ThreeColumn 안에서는 ProductCard Info ThreeColumn을 사용합니다.
+Replacement: ProductCard TwoColumn 내부 composition으로 사용합니다.
+Key props:
+- badgePrimary [optional] boolean
+- badgeSecondary [optional] boolean
+- discount [optional] boolean
+- discountText [optional] string
+- priceText [required] string
+- itemNameText [required] string
+- subInfo [optional] boolean
+- date [optional] boolean
+- dateText [optional] string
+- bookmarkCount [optional] boolean
+- talkCount [optional] boolean
+Composition:
+- Badge [0-2] -> size=xs, shape=box로 고정
+- Icon Count [0-2]
+Order: fixed
+Owner: Platform Design System
+```
+
+---
+
+## ProductCard Info ThreeColumn
+
+```
+Status: Internal
+Purpose: ProductCard ThreeColumn에 들어가는 3column 전용 상품 정보 컴포넌트입니다.
+Use when: 3column 상품 카드에서 상품명, 가격, 할인율, 뱃지, 등록 시간을 표시할 때.
+Avoid when: ProductCard TwoColumn 안에서는 ProductCard Info TwoColumn을 사용합니다.
+Replacement: ProductCard ThreeColumn 내부 composition으로 사용합니다.
+Key props:
+- badgePrimary [optional] boolean
+- badgeSecondary [optional] boolean
+- discount [optional] boolean
+- discountText [optional] string
+- priceText [required] string
+- itemNameText [required] string
+- date [optional] boolean
+- dateText [optional] string
+Composition:
+- Badge [0-2] -> size=xs, shape=box로 고정
+Order: fixed
 Owner: Platform Design System
 ```
 
@@ -351,6 +491,7 @@ Status: Core
 Purpose: 상태, 카테고리, 프로모션 등을 짧은 텍스트 레이블로 표시하는 배지입니다.
 Use when: ProductCardInfo의 프로모션 배지, 상태 표시.
 Avoid when: 광고 표시에는 Ad Badge를 사용합니다.
+Note: ProductCard 내부에서는 ProductCard Info 컴포넌트가 size=xs, shape=box 조합을 고정해서 사용합니다. 화면 조합 시 ProductCard 내부 badge를 직접 배치하지 않습니다.
 Key props:
 - variant [required] brand | positiveWeak | positiveSolid | neutralWeak | neutralOutlined
 - size [required] xs | sm | md
@@ -422,11 +563,12 @@ Status: Beta
 Purpose: 아이콘만 포함한 선택형 토글 버튼입니다.
 Use when: 텍스트 없이 아이콘으로만 선택 상태를 표현할 때.
 Avoid when: 텍스트 레이블이 필요하면 textIconToggle을 사용합니다.
+Note: size는 보이는 아이콘 크기 기준입니다. shape=none은 container가 interaction area 역할을 하며, ProductCard Favorite Toggle은 variant=neutralSolid, shape=none, size=xl 조합을 nested로 사용합니다.
 Key props:
 - variant [required] neutralOutlined | neutralSolid
 - size [required] xl | lg | md | sm
 - shape [required] box | none
-- state [required] on | off
+- state [optional] on | off -> iconToggle 자체의 bg, border, color 등 visual state가 달라질 때 사용
 - icon [required] -> toggleItem INSTANCE_SWAP (bookmark / bookmark-filled / bookmark-outlined / check / noti-added / unnoti)
 Composition: none
 Owner: Platform Design System
@@ -456,18 +598,24 @@ Owner: Platform Design System
 ## DSIcon
 
 ```
-Status: Experimental
-Purpose: 시스템 아이콘을 임시로 표준 크기와 tint 규칙에 맞춰 표시합니다.
-Use when: 기존 컴포넌트가 DSIcon 구조를 아직 참조하는 경우에만 사용합니다.
-Avoid when: 신규 컴포넌트에서 직접 의존하지 않습니다.
-Note: This component may be removed or replaced.
+Status: Beta
+Purpose: 컴포넌트화 대상이 아닌 1회성 커스텀 슬롯에서 DS 아이콘 소스를 표준 size와 tint 규칙에 맞춰 표시하는 아이콘 래퍼입니다.
+Use when: 1회성 커스텀 슬롯 안에서 시스템 아이콘 또는 원본 컬러 유지 아이콘을 단독으로 배치해야 할 때 사용합니다.
+Avoid when: Button, Navigation Bar, Toggle, Badge 등 기존 컴포넌트 내부에 포함되는 아이콘에는 사용하지 않습니다. 반복 사용되거나 2개 이상 화면에서 재사용될 가능성이 있는 아이콘 UI는 별도 컴포넌트화를 검토합니다. 브랜드 로고, 상품 이미지, 콘텐츠 이미지에는 사용하지 않습니다.
 Key props:
 - size [required] xxxxs | xxxs | xxs | xs | sm | md | lg | xl | xxl | xxxl
-- tint [required] none | neutral | brand | positive
-  -> none: 원본 아이콘 색상 유지
-  -> neutral | brand | positive: 컬러 토큰 오버라이드 적용
-- semantic [required] sic.* -> 아이콘 이름 (sic.heart, sic.chevron-left 등)
-Composition: none
+- tint [required] none | neutral | brand | positive | inverse
+  -> none: DSIcon이 별도 tint override를 적용하지 않고, icon 슬롯에 들어온 소스 컴포넌트의 원본 fill/binding을 그대로 따릅니다. 기본 sic.blank는 color.fg.neutral.weak로 보이며, iic.* 아이콘으로 swap하면 iic.*의 원본 컬러가 유지됩니다.
+  -> neutral: sic.* 단색 시스템 아이콘에 color.fg.neutral.solid 직접 바인딩
+  -> brand: sic.* 단색 시스템 아이콘에 color.fg.brand.contrast 직접 바인딩
+  -> positive: sic.* 단색 시스템 아이콘에 color.fg.positive.contrast 직접 바인딩
+  -> inverse: sic.* 단색 시스템 아이콘에 color.fg.neutral.on-solid 직접 바인딩
+- icon [required] INSTANCE_SWAP -> DS 아이콘 소스
+  -> sic.*: tint 적용 대상인 단색 시스템 아이콘
+  -> iic.*: 브랜드/서비스 아이콘처럼 원본 컬러 유지가 필요한 아이콘
+Composition:
+- icon slot [1]: sic.* 또는 iic.* 아이콘 인스턴스
+Token rule: tint는 semantic color token을 직접 참조합니다. component token(dsIcon.*) 도입은 추후 검토합니다.
 Owner: Platform Design System
 ```
 
