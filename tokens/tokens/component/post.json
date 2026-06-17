@@ -1,0 +1,56 @@
+{
+  "post": {
+    "body": {
+      "label": {
+        "color": {
+          "$value": "{color.fg.neutral.default}",
+          "$type": "color"
+        },
+        "typography": {
+          "$value": "{typography.body.lg}",
+          "$type": "typography"
+        }
+      }
+    },
+    "category": {
+      "label": {
+        "color": {
+          "$value": "{color.fg.neutral.default}",
+          "$type": "color"
+        },
+        "typography": {
+          "$value": "{typography.subtitle.lg}",
+          "$type": "typography"
+        }
+      }
+    },
+    "container": {
+      "bg": {
+        "default": {
+          "$value": "{color.bg.neutral.surface}",
+          "$type": "color"
+        }
+      },
+      "gap": {
+        "$value": "{spacing.gap-y.md}",
+        "$type": "space"
+      },
+      "padding-x": {
+        "$value": "{spacing.padding.xl}",
+        "$type": "space"
+      }
+    },
+    "title": {
+      "label": {
+        "color": {
+          "$value": "{color.fg.neutral.default}",
+          "$type": "color"
+        },
+        "typography": {
+          "$value": "{typography.title.md}",
+          "$type": "typography"
+        }
+      }
+    }
+  }
+}

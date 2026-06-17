@@ -1,0 +1,20 @@
+{
+  "image": {
+    "container": {
+      "bg": {
+        "placeholder": {
+          "$value": "{color.bg.neutral.weak.enabled}",
+          "$type": "color"
+        }
+      }
+    },
+    "icon": {
+      "color": {
+        "placeholder": {
+          "$value": "{color.fg.neutral.ghost}",
+          "$type": "color"
+        }
+      }
+    }
+  }
+}

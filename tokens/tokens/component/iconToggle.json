@@ -1,0 +1,140 @@
+{
+  "iconToggle": {
+    "container": {
+      "bg": {
+        "box": {
+          "neutralOutlined": {
+            "off": {
+              "$value": "{color.bg.neutral.surface}",
+              "$type": "color"
+            },
+            "on": {
+              "$value": "{color.bg.neutral.surface}",
+              "$type": "color"
+            }
+          }
+        }
+      },
+      "border": {
+        "box": {
+          "neutralOutlined": {
+            "off": {
+              "$value": "{color.fg.neutral.ghost}",
+              "$type": "color"
+            },
+            "on": {
+              "$value": "{color.fg.neutral.ghost}",
+              "$type": "color"
+            }
+          }
+        }
+      },
+      "height": {
+        "box": {
+          "size-md": {
+            "$value": "{sizing.height.md}",
+            "$type": "size"
+          },
+          "size-sm": {
+            "$value": "{sizing.height.sm}",
+            "$type": "size"
+          }
+        },
+        "none": {
+          "size-lg": {
+            "$value": "{sizing.height.md}",
+            "$type": "size"
+          },
+          "size-xl": {
+            "$value": "{sizing.height.md}",
+            "$type": "size"
+          }
+        }
+      },
+      "radius": {
+        "box": {
+          "size-md": {
+            "$value": "{radius.xs}",
+            "$type": "borderRadius"
+          },
+          "size-sm": {
+            "$value": "{radius.xs}",
+            "$type": "borderRadius"
+          }
+        }
+      },
+      "width": {
+        "box": {
+          "size-md": {
+            "$value": "{sizing.width.xxl}",
+            "$type": "size"
+          },
+          "size-sm": {
+            "$value": "{sizing.width.xl}",
+            "$type": "size"
+          }
+        },
+        "none": {
+          "size-lg": {
+            "$value": "{sizing.width.xxl}",
+            "$type": "size"
+          },
+          "size-xl": {
+            "$value": "{sizing.width.xxl}",
+            "$type": "size"
+          }
+        }
+      }
+    },
+    "icon": {
+      "color": {
+        "box": {
+          "neutralOutlined": {
+            "off": {
+              "$value": "{color.fg.neutral.solid}",
+              "$type": "color"
+            },
+            "on": {
+              "$value": "{color.fg.neutral.subtlest}",
+              "$type": "color"
+            }
+          }
+        },
+        "none": {
+          "neutralSolid": {
+            "off": {
+              "$value": "{color.fg.neutral.onSolid.enabled}",
+              "$type": "color"
+            },
+            "on": {
+              "$value": "{color.fg.brand.contrast.enabled}",
+              "$type": "color"
+            }
+          }
+        }
+      },
+      "size": {
+        "box": {
+          "size-md": {
+            "$value": "{sizing.icon.xs}",
+            "$type": "size"
+          },
+          "size-sm": {
+            "$value": "{sizing.icon.xxs}",
+            "$type": "size"
+          }
+        },
+        "none": {
+          "size-lg": {
+            "$value": "{sizing.icon.sm}",
+            "$type": "size"
+          },
+          "size-xl": {
+            "$value": "{sizing.icon.md}",
+            "$type": "size"
+          }
+        }
+      }
+    }
+  }
+}

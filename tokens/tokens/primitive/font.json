@@ -1,0 +1,329 @@
+{
+  "font": {
+    "family": {
+      "pretendard": {
+        "$value": "Pretendard Variable",
+        "$type": "fontFamily",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_FAMILY"
+            ],
+            "codeSyntax": {
+              "Web": "font.family.pretendard"
+            }
+          }
+        }
+      }
+    },
+    "lineHeight": {
+      "100": {
+        "$value": "100%",
+        "$type": "lineHeight",
+        "$description": "1.0",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.lineHeight.100"
+            }
+          }
+        }
+      },
+      "125": {
+        "$value": "125%",
+        "$type": "lineHeight",
+        "$description": "1.25",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.lineHeight.125"
+            }
+          }
+        }
+      },
+      "130": {
+        "$value": "130%",
+        "$type": "lineHeight",
+        "$description": "1.3",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.lineHeight.130"
+            }
+          }
+        }
+      },
+      "140": {
+        "$value": "140%",
+        "$type": "lineHeight",
+        "$description": "1.4",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.lineHeight.140"
+            }
+          }
+        }
+      },
+      "150": {
+        "$value": "150%",
+        "$type": "lineHeight",
+        "$description": "1.5",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.lineHeight.150"
+            }
+          }
+        }
+      },
+      "160": {
+        "$value": "160%",
+        "$type": "lineHeight",
+        "$description": "1.6",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "LINE_HEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.lineHeight.160"
+            }
+          }
+        }
+      }
+    },
+    "size": {
+      "10": {
+        "$value": "10",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.10"
+            }
+          }
+        }
+      },
+      "11": {
+        "$value": "11",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.11"
+            }
+          }
+        }
+      },
+      "12": {
+        "$value": "12",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.12"
+            }
+          }
+        }
+      },
+      "13": {
+        "$value": "13",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.13"
+            }
+          }
+        }
+      },
+      "14": {
+        "$value": "14",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.14"
+            }
+          }
+        }
+      },
+      "15": {
+        "$value": "15",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.15"
+            }
+          }
+        }
+      },
+      "16": {
+        "$value": "16",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.16"
+            }
+          }
+        }
+      },
+      "18": {
+        "$value": "18",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.18"
+            }
+          }
+        }
+      },
+      "20": {
+        "$value": "20",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.20"
+            }
+          }
+        }
+      },
+      "22": {
+        "$value": "22",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.22"
+            }
+          }
+        }
+      },
+      "24": {
+        "$value": "24",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.24"
+            }
+          }
+        }
+      },
+      "28": {
+        "$value": "28",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_SIZE"
+            ],
+            "codeSyntax": {
+              "Web": "font.size.28"
+            }
+          }
+        }
+      }
+    },
+    "weight": {
+      "400": {
+        "$value": "400",
+        "$type": "fontWeight",
+        "$description": "Regular",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.weight.400"
+            }
+          }
+        }
+      },
+      "500": {
+        "$value": "500",
+        "$type": "fontWeight",
+        "$description": "Medium",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.weight.500"
+            }
+          }
+        }
+      },
+      "700": {
+        "$value": "700",
+        "$type": "fontWeight",
+        "$description": "Bold",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "FONT_WEIGHT"
+            ],
+            "codeSyntax": {
+              "Web": "font.weight.700"
+            }
+          }
+        }
+      }
+    }
+  }
+}

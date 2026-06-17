@@ -1,0 +1,30 @@
+{
+  "iconCount": {
+    "container": {
+      "gap-x": {
+        "$value": "{spacing.gap-x.xxxs}",
+        "$type": "space"
+      }
+    },
+    "icon": {
+      "color": {
+        "$value": "{color.fg.neutral.ghost}",
+        "$type": "color"
+      },
+      "size": {
+        "$value": "{sizing.icon.xxs}",
+        "$type": "size"
+      }
+    },
+    "label": {
+      "color": {
+        "$value": "{color.fg.neutral.weak}",
+        "$type": "color"
+      },
+      "typography": {
+        "$value": "{typography.body.sm}",
+        "$type": "typography"
+      }
+    }
+  }
+}

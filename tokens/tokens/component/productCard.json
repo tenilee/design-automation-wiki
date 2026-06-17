@@ -1,0 +1,132 @@
+{
+  "productCard": {
+    "brandBadge": {
+      "container": {
+        "height": {
+          "$value": "{sizing.height.xxxs}",
+          "$type": "size"
+        }
+      }
+    },
+    "container": {
+      "gap-y": {
+        "$value": "{spacing.gap-y.sm}",
+        "$type": "space"
+      }
+    },
+    "counts": {
+      "gap-x": {
+        "$value": "{spacing.gap-x.xs}",
+        "$type": "space"
+      }
+    },
+    "date": {
+      "label": {
+        "color": {
+          "$value": "{color.fg.neutral.weak}",
+          "$type": "color"
+        },
+        "typography": {
+          "$value": "{typography.caption.xs}",
+          "$type": "typography"
+        }
+      }
+    },
+    "discountRate": {
+      "label": {
+        "color": {
+          "$value": "{color.fg.brand.contrast.enabled}",
+          "$type": "color"
+        },
+        "typography": {
+          "threeColumn": {
+            "$value": "{typography.label.bold.xxs}",
+            "$type": "typography"
+          },
+          "twoColumn": {
+            "$value": "{typography.label.bold.lg}",
+            "$type": "typography"
+          }
+        }
+      }
+    },
+    "favoriteToggle": {
+      "container": {
+        "size": {
+          "$value": "{sizing.height.md}",
+          "$type": "size"
+        }
+      }
+    },
+    "info": {
+      "container": {
+        "gap-y": {
+          "threeColumn": {
+            "$value": "{spacing.gap-y.xxs}",
+            "$type": "space"
+          },
+          "twoColumn": {
+            "$value": "{spacing.gap-y.xs}",
+            "$type": "space"
+          }
+        }
+      }
+    },
+    "itemName": {
+      "label": {
+        "typography": {
+          "threeColumn": {
+            "$value": "{typography.body.sm}",
+            "$type": "typography"
+          },
+          "twoColumn": {
+            "$value": "{typography.body.md}",
+            "$type": "typography"
+          }
+        }
+      }
+    },
+    "price": {
+      "label": {
+        "color": {
+          "$value": "{color.fg.neutral.default}",
+          "$type": "color"
+        },
+        "typography": {
+          "threeColumn": {
+            "$value": "{typography.label.bold.md}",
+            "$type": "typography"
+          },
+          "twoColumn": {
+            "$value": "{typography.label.bold.lg}",
+            "$type": "typography"
+          }
+        }
+      }
+    },
+    "priceInfo": {
+      "container": {
+        "gap-y": {
+          "$value": "{spacing.gap-y.xxs}",
+          "$type": "space"
+        }
+      }
+    },
+    "thumbnail": {
+      "container": {
+        "radius": {
+          "$value": "{radius.sm}",
+          "$type": "borderRadius"
+        }
+      }
+    },
+    "title": {
+      "label": {
+        "color": {
+          "$value": "{color.fg.neutral.muted}",
+          "$type": "color"
+        }
+      }
+    }
+  }
+}

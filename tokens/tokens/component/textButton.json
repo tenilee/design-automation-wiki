@@ -1,0 +1,104 @@
+{
+  "textButton": {
+    "container": {
+      "gap-x": {
+        "rightIcon": {
+          "$value": "{spacing.gap-x.xxxs}",
+          "$type": "space"
+        }
+      }
+    },
+    "icon": {
+      "color": {
+        "disabled": {
+          "$value": "{color.fg.neutral.contrast.disabled}",
+          "$type": "color"
+        },
+        "mute": {
+          "enabled": {
+            "$value": "{color.fg.neutral.muted}",
+            "$type": "color"
+          }
+        },
+        "neutral": {
+          "enabled": {
+            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$type": "color"
+          }
+        },
+        "strong": {
+          "enabled": {
+            "$value": "{color.fg.neutral.default}",
+            "$type": "color"
+          }
+        },
+        "subtle": {
+          "enabled": {
+            "$value": "{color.fg.neutral.weak}",
+            "$type": "color"
+          }
+        }
+      },
+      "size": {
+        "rightIcon": {
+          "$value": "{sizing.icon.xxxs}",
+          "$type": "size"
+        }
+      }
+    },
+    "label": {
+      "color": {
+        "disabled": {
+          "$value": "{color.fg.neutral.contrast.disabled}",
+          "$type": "color"
+        },
+        "mute": {
+          "enabled": {
+            "$value": "{color.fg.neutral.muted}",
+            "$type": "color"
+          }
+        },
+        "neutral": {
+          "enabled": {
+            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$type": "color"
+          }
+        },
+        "strong": {
+          "enabled": {
+            "$value": "{color.fg.neutral.default}",
+            "$type": "color"
+          }
+        },
+        "subtle": {
+          "enabled": {
+            "$value": "{color.fg.neutral.weak}",
+            "$type": "color"
+          }
+        }
+      },
+      "typography": {
+        "size-lg": {
+          "bold": {
+            "$value": "{typography.label.bold.md}",
+            "$type": "typography"
+          },
+          "medium": {
+            "$value": "{typography.label.medium.md}",
+            "$type": "typography"
+          }
+        },
+        "size-md": {
+          "bold": {
+            "$value": "{typography.label.bold.xs}",
+            "$type": "typography"
+          },
+          "medium": {
+            "$value": "{typography.label.medium.xs}",
+            "$type": "typography"
+          }
+        }
+      }
+    }
+  }
+}

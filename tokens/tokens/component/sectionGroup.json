@@ -1,0 +1,24 @@
+{
+  "sectionGroup": {
+    "container": {
+      "gap-y": {
+        "lg": {
+          "$value": "{spacing.gap-y.xxxxl}",
+          "$type": "space"
+        },
+        "md": {
+          "$value": "{spacing.gap-y.xxl}",
+          "$type": "space"
+        },
+        "none": {
+          "$value": "{spacing.gap-y.none}",
+          "$type": "space"
+        },
+        "sm": {
+          "$value": "{spacing.gap-y.xl}",
+          "$type": "space"
+        }
+      }
+    }
+  }
+}

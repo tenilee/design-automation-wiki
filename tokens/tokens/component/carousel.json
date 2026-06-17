@@ -1,0 +1,22 @@
+{
+  "carousel": {
+    "container": {
+      "gap-x": {
+        "md": {
+          "$value": "{spacing.gap-x.md}",
+          "$type": "space"
+        },
+        "none": {
+          "$value": "{spacing.gap-x.none}",
+          "$type": "space"
+        }
+      },
+      "padding-x": {
+        "page": {
+          "$value": "{spacing.padding.xl}",
+          "$type": "space"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "navigationBar": {
+    "backButton": {
+      "icon": {
+        "asset": {
+          "$value": "{asset.icon.action.back}",
+          "$type": "asset"
+        }
+      }
+    },
+    "container": {
+      "bg": {
+        "$value": "{color.bg.neutral.surface}",
+        "$type": "color"
+      },
+      "height": {
+        "$value": "{sizing.height.xxl}",
+        "$type": "size"
+      },
+      "padding-x": {
+        "$value": "{spacing.padding.sm}",
+        "$type": "space"
+      },
+      "padding-y": {
+        "$value": "{spacing.padding.xxxs}",
+        "$type": "space"
+      }
+    },
+    "itemButton": {
+      "icon": {
+        "color": {
+          "disabled": {
+            "$value": "{color.fg.neutral.solid}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.fg.neutral.solid}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.fg.neutral.solid}",
+            "$type": "color"
+          }
+        },
+        "size": {
+          "$value": "{sizing.icon.md}",
+          "$type": "size"
+        }
+      },
+      "padding": {
+        "$value": "{spacing.padding.sm}",
+        "$type": "space"
+      },
+      "size": {
+        "$value": "{sizing.height.lg}",
+        "$type": "size"
+      }
+    },
+    "title": {
+      "color": {
+        "$value": "{color.fg.neutral.default}",
+        "$type": "color"
+      },
+      "padding-right": {
+        "$value": "{spacing.padding.lg}",
+        "$type": "space"
+      },
+      "typography": {
+        "lg": {
+          "$value": "{typography.title.sm}",
+          "$type": "typography"
+        },
+        "md": {
+          "$value": "{typography.title.xs}",
+          "$type": "typography"
+        }
+      }
+    }
+  }
+}

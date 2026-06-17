@@ -1,0 +1,31 @@
+{
+  "asset": {
+    "icon": {
+      "action": {
+        "back": {
+          "$value": "{asset.icon.system.sicChevronLeft}",
+          "$type": "asset"
+        }
+      },
+      "state": {
+        "favorite": {
+          "off": {
+            "$value": "{asset.icon.system.sicBookmarkOutlined}",
+            "$type": "asset",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          },
+          "on": {
+            "$value": "{asset.icon.system.sicBookmarkOutlined}",
+            "$type": "asset"
+          }
+        }
+      }
+    }
+  }
+}

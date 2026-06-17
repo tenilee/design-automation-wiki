@@ -1,0 +1,18 @@
+{
+  "grid": {
+    "container": {
+      "gap-x": {
+        "md": {
+          "$value": "{spacing.gap-x.md}",
+          "$type": "space"
+        }
+      },
+      "gap-y": {
+        "xl": {
+          "$value": "{spacing.gap-y.xxl}",
+          "$type": "space"
+        }
+      }
+    }
+  }
+}

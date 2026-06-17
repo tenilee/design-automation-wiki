@@ -1,0 +1,70 @@
+{
+  "adBadge": {
+    "container": {
+      "bg": {
+        "overlay": {
+          "$value": "{color.bg.neutral.weak.enabled}",
+          "$type": "color"
+        }
+      },
+      "height": {
+        "inline": {
+          "$value": "{sizing.height.xxxxs}",
+          "$type": "size"
+        },
+        "overlay": {
+          "$value": "{sizing.height.xxxs}",
+          "$type": "size"
+        }
+      },
+      "opacity": {
+        "inline": {
+          "$value": "{opacity.layer.muted}",
+          "$type": "opacity"
+        },
+        "overlay": {
+          "$value": "{opacity.layer.weak}",
+          "$type": "opacity"
+        }
+      },
+      "radius": {
+        "overlay": {
+          "$value": "{radius.xxs}",
+          "$type": "borderRadius"
+        }
+      },
+      "width": {
+        "inline": {
+          "$value": "{sizing.width.xxxs}",
+          "$type": "size"
+        },
+        "overlay": {
+          "$value": "{sizing.width.lg}",
+          "$type": "size"
+        }
+      }
+    },
+    "label": {
+      "color": {
+        "inline": {
+          "$value": "{color.fg.neutral.subtlest}",
+          "$type": "color"
+        },
+        "overlay": {
+          "$value": "{color.fg.neutral.weak}",
+          "$type": "color"
+        }
+      },
+      "typography": {
+        "inline": {
+          "$value": "{typography.label.bold.xxs}",
+          "$type": "typography"
+        },
+        "overlay": {
+          "$value": "{typography.label.bold.xxs}",
+          "$type": "typography"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "asset": {
+    "icon": {
+      "system": {
+        "sicBlank": {
+          "$value": "asset://icon/system/sic-blank",
+          "$type": "asset"
+        },
+        "sicBookmark": {
+          "$value": "asset://icon/system/sic-bookmark",
+          "$type": "asset"
+        },
+        "sicBookmarkFilled": {
+          "$value": "asset://icon/system/sic-bookmark-filled",
+          "$type": "asset"
+        },
+        "sicBookmarkOutlined": {
+          "$value": "asset://icon/system/sic-bookmark-outlined",
+          "$type": "asset"
+        },
+        "sicCart": {
+          "$value": "asset://icon/system/sic-cart",
+          "$type": "asset"
+        },
+        "sicCheck": {
+          "$value": "asset://icon/system/sic-check",
+          "$type": "asset"
+        },
+        "sicChevronLeft": {
+          "$value": "asset://icon/system/sic-chevron-left",
+          "$type": "asset"
+        },
+        "sicChevronRight": {
+          "$value": "asset://icon/system/sic-chevron-right",
+          "$type": "asset"
+        },
+        "sicHeart": {
+          "$value": "asset://icon/system/sic-heart",
+          "$type": "asset"
+        },
+        "sicHeartFilled": {
+          "$value": "asset://icon/system/sic-heart-filled",
+          "$type": "asset"
+        },
+        "sicMenu": {
+          "$value": "asset://icon/system/sic-menu",
+          "$type": "asset"
+        },
+        "sicMuteFilled": {
+          "$value": "asset://icon/system/sic-mute-filled",
+          "$type": "asset"
+        },
+        "sicNoti": {
+          "$value": "asset://icon/system/sic-noti",
+          "$type": "asset"
+        },
+        "sicNotiAdded": {
+          "$value": "asset://icon/system/sic-noti-added",
+          "$type": "asset"
+        },
+        "sicRanking": {
+          "$value": "asset://icon/system/sic-ranking",
+          "$type": "asset"
+        },
+        "sicSearch": {
+          "$value": "asset://icon/system/sic-search",
+          "$type": "asset"
+        },
+        "sicShare": {
+          "$value": "asset://icon/system/sic-share",
+          "$type": "asset"
+        },
+        "sicStore": {
+          "$value": "asset://icon/system/sic-store",
+          "$type": "asset"
+        },
+        "sicTalk": {
+          "$value": "asset://icon/system/sic-talk",
+          "$type": "asset"
+        },
+        "sicTalkFilled": {
+          "$value": "asset://icon/system/sic-talk-filled",
+          "$type": "asset"
+        },
+        "sicTriangleDownFilled": {
+          "$value": "asset://icon/system/sic-triangle-down-filled",
+          "$type": "asset"
+        },
+        "sicUnmuteFilled": {
+          "$value": "asset://icon/system/sic-unmute-filled",
+          "$type": "asset"
+        },
+        "sicUnnoti": {
+          "$value": "asset://icon/system/sic-unnoti",
+          "$type": "asset"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "sizing": {
+    "0": {
+      "$value": "0px",
+      "$type": "size"
+    },
+    "1": {
+      "$value": "1px",
+      "$type": "size"
+    },
+    "2": {
+      "$value": "2px",
+      "$type": "size"
+    },
+    "4": {
+      "$value": "4px",
+      "$type": "size"
+    },
+    "6": {
+      "$value": "6px",
+      "$type": "size"
+    },
+    "8": {
+      "$value": "8px",
+      "$type": "size"
+    },
+    "10": {
+      "$value": "10px",
+      "$type": "size"
+    },
+    "12": {
+      "$value": "12px",
+      "$type": "size"
+    },
+    "14": {
+      "$value": "14px",
+      "$type": "size"
+    },
+    "16": {
+      "$value": "16px",
+      "$type": "size"
+    },
+    "18": {
+      "$value": "18px",
+      "$type": "size"
+    },
+    "20": {
+      "$value": "20px",
+      "$type": "size"
+    },
+    "22": {
+      "$value": "22px",
+      "$type": "size"
+    },
+    "24": {
+      "$value": "24px",
+      "$type": "size"
+    },
+    "26": {
+      "$value": "26px",
+      "$type": "size"
+    },
+    "28": {
+      "$value": "28px",
+      "$type": "size"
+    },
+    "30": {
+      "$value": "30px",
+      "$type": "size"
+    },
+    "32": {
+      "$value": "32px",
+      "$type": "size"
+    },
+    "34": {
+      "$value": "34px",
+      "$type": "size"
+    },
+    "36": {
+      "$value": "36px",
+      "$type": "size"
+    },
+    "40": {
+      "$value": "40px",
+      "$type": "size"
+    },
+    "44": {
+      "$value": "44px",
+      "$type": "size"
+    },
+    "46": {
+      "$value": "46px",
+      "$type": "size"
+    },
+    "48": {
+      "$value": "48px",
+      "$type": "size"
+    },
+    "50": {
+      "$value": "50px",
+      "$type": "size"
+    },
+    "52": {
+      "$value": "52px",
+      "$type": "size"
+    },
+    "56": {
+      "$value": "56px",
+      "$type": "size"
+    },
+    "60": {
+      "$value": "60px",
+      "$type": "size"
+    },
+    "64": {
+      "$value": "64px",
+      "$type": "size"
+    },
+    "84": {
+      "$value": "84px",
+      "$type": "size"
+    },
+    "162": {
+      "$value": "162px",
+      "$type": "size"
+    },
+    "200": {
+      "$value": "200px",
+      "$type": "size"
+    }
+  },
+  "spacing": {
+    "0": {
+      "$value": "0",
+      "$type": "space"
+    },
+    "2": {
+      "$value": "2px",
+      "$type": "space"
+    },
+    "4": {
+      "$value": "4px",
+      "$type": "space"
+    },
+    "6": {
+      "$value": "6px",
+      "$type": "space"
+    },
+    "8": {
+      "$value": "8px",
+      "$type": "space"
+    },
+    "10": {
+      "$value": "10px",
+      "$type": "space"
+    },
+    "12": {
+      "$value": "12px",
+      "$type": "space"
+    },
+    "14": {
+      "$value": "14px",
+      "$type": "space"
+    },
+    "16": {
+      "$value": "16px",
+      "$type": "space"
+    },
+    "18": {
+      "$value": "18px",
+      "$type": "space"
+    },
+    "20": {
+      "$value": "20px",
+      "$type": "space"
+    },
+    "22": {
+      "$value": "22px",
+      "$type": "space"
+    },
+    "24": {
+      "$value": "24px",
+      "$type": "space"
+    },
+    "26": {
+      "$value": "26px",
+      "$type": "space"
+    },
+    "28": {
+      "$value": "28px",
+      "$type": "space"
+    },
+    "30": {
+      "$value": "30px",
+      "$type": "space"
+    },
+    "32": {
+      "$value": "32px",
+      "$type": "space"
+    },
+    "34": {
+      "$value": "34px",
+      "$type": "space"
+    },
+    "36": {
+      "$value": "36px",
+      "$type": "space"
+    },
+    "40": {
+      "$value": "40px",
+      "$type": "space"
+    },
+    "44": {
+      "$value": "44px",
+      "$type": "space"
+    },
+    "48": {
+      "$value": "48px",
+      "$type": "space"
+    },
+    "52": {
+      "$value": "52px",
+      "$type": "space"
+    },
+    "56": {
+      "$value": "56px",
+      "$type": "space"
+    },
+    "60": {
+      "$value": "60px",
+      "$type": "space"
+    },
+    "64": {
+      "$value": "64px",
+      "$type": "space"
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "badge": {
+    "container": {
+      "bg": {
+        "box": {
+          "brandWeak": {
+            "$value": "{color.bg.brand.weak.enabled}",
+            "$type": "color"
+          },
+          "neutralOutlined": {
+            "$value": "{color.bg.neutral.surface}",
+            "$type": "color"
+          },
+          "neutralWeak": {
+            "$value": "{color.bg.neutral.weak.enabled}",
+            "$type": "color"
+          },
+          "positiveWeak": {
+            "$value": "{color.bg.positive.weak.enabled}",
+            "$type": "color"
+          }
+        },
+        "pill": {
+          "positiveSolid": {
+            "$value": "{color.bg.positive.solid}",
+            "$type": "color"
+          }
+        }
+      },
+      "border": {
+        "box": {
+          "neutralOutlined": {
+            "$value": "{color.border.neutral.subtle}",
+            "$type": "color"
+          }
+        }
+      },
+      "gap-x": {
+        "size-md": {
+          "$value": "{spacing.gap-x.xxxs}",
+          "$type": "space"
+        },
+        "size-sm": {
+          "$value": "{spacing.gap-x.xxxs}",
+          "$type": "space"
+        },
+        "size-xs": {
+          "$value": "{spacing.gap-x.xxxs}",
+          "$type": "space"
+        }
+      },
+      "height": {
+        "size-md": {
+          "$value": "{sizing.height.xs}",
+          "$type": "size"
+        },
+        "size-sm": {
+          "$value": "{sizing.height.xxs}",
+          "$type": "size"
+        },
+        "size-xs": {
+          "$value": "{sizing.height.xxxs}",
+          "$type": "size"
+        }
+      },
+      "padding-x": {
+        "size-md": {
+          "$value": "{spacing.padding.xxs}",
+          "$type": "space"
+        },
+        "size-sm": {
+          "$value": "{spacing.padding.xxxs}",
+          "$type": "space"
+        },
+        "size-xs": {
+          "$value": "{spacing.padding.xxxs}",
+          "$type": "space"
+        }
+      },
+      "radius": {
+        "box": {
+          "$value": "{radius.xxs}",
+          "$type": "borderRadius"
+        },
+        "pill": {
+          "$value": "{radius.full}",
+          "$type": "borderRadius"
+        }
+      }
+    },
+    "icon": {
+      "color": {
+        "box": {
+          "brandWeak": {
+            "$value": "{color.fg.brand.contrast.enabled}",
+            "$type": "color"
+          },
+          "neutralOutlined": {
+            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$type": "color"
+          },
+          "neutralWeak": {
+            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$type": "color"
+          },
+          "positiveWeak": {
+            "$value": "{color.fg.positive.contrast.enabled}",
+            "$type": "color"
+          }
+        },
+        "pill": {
+          "positiveSolid": {
+            "$value": "{color.fg.positive.onSolid}",
+            "$type": "color"
+          }
+        }
+      },
+      "size": {
+        "size-md": {
+          "$value": "{sizing.icon.xxs}",
+          "$type": "size"
+        },
+        "size-sm": {
+          "$value": "{sizing.icon.xxxs}",
+          "$type": "size"
+        },
+        "size-xs": {
+          "$value": "{sizing.icon.xxxxs}",
+          "$type": "size"
+        }
+      }
+    },
+    "label": {
+      "color": {
+        "box": {
+          "brandWeak": {
+            "$value": "{color.fg.brand.contrast.enabled}",
+            "$type": "color"
+          },
+          "neutralOutlined": {
+            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$type": "color"
+          },
+          "neutralWeak": {
+            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$type": "color"
+          },
+          "positiveWeak": {
+            "$value": "{color.fg.positive.contrast.enabled}",
+            "$type": "color"
+          }
+        },
+        "pill": {
+          "positiveSolid": {
+            "$value": "{color.fg.positive.onSolid}",
+            "$type": "color"
+          }
+        }
+      },
+      "typography": {
+        "size-md": {
+          "$value": "{typography.caption.bold.xxs}",
+          "$type": "typography"
+        },
+        "size-sm": {
+          "$value": "{typography.caption.medium.xxs}",
+          "$type": "typography"
+        },
+        "size-xs": {
+          "$value": "{typography.caption.medium.xxxs}",
+          "$type": "typography"
+        }
+      }
+    }
+  }
+}

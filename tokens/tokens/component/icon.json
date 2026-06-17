@@ -1,0 +1,46 @@
+{
+  "icon": {
+    "size": {
+      "lg": {
+        "$value": "{sizing.icon.lg}",
+        "$type": "size"
+      },
+      "md": {
+        "$value": "{sizing.icon.md}",
+        "$type": "size"
+      },
+      "sm": {
+        "$value": "{sizing.icon.sm}",
+        "$type": "size"
+      },
+      "xl": {
+        "$value": "{sizing.icon.xl}",
+        "$type": "size"
+      },
+      "xs": {
+        "$value": "{sizing.icon.xs}",
+        "$type": "size"
+      },
+      "xxl": {
+        "$value": "{sizing.icon.xxl}",
+        "$type": "size"
+      },
+      "xxs": {
+        "$value": "{sizing.icon.xxs}",
+        "$type": "size"
+      },
+      "xxxl": {
+        "$value": "{sizing.icon.xxxl}",
+        "$type": "size"
+      },
+      "xxxs": {
+        "$value": "{sizing.icon.xxxs}",
+        "$type": "size"
+      },
+      "xxxxs": {
+        "$value": "{sizing.icon.xxxxs}",
+        "$type": "size"
+      }
+    }
+  }
+}

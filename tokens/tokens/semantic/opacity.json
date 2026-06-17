@@ -1,0 +1,21 @@
+{
+  "opacity": {
+    "content": {
+      "weak": {
+        "$value": "{opacity.50}",
+        "$type": "opacity",
+        "$description": "text/icon 등 콘텐츠 약화 표현"
+      }
+    },
+    "layer": {
+      "muted": {
+        "$value": "{opacity.70}",
+        "$type": "opacity"
+      },
+      "weak": {
+        "$value": "{opacity.50}",
+        "$type": "opacity"
+      }
+    }
+  }
+}

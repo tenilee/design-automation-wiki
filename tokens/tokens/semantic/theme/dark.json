@@ -1,0 +1,220 @@
+{
+  "color": {
+    "bg": {
+      "brand": {
+        "solid": {
+          "disabled": {
+            "$value": "{color.coolGray.800}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.red.400}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.red.600}",
+            "$type": "color"
+          }
+        },
+        "weak": {
+          "disabled": {
+            "$value": "{color.coolGray.800}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.coolGray.800}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.coolGray.700}",
+            "$type": "color"
+          }
+        }
+      },
+      "neutral": {
+        "solid": {
+          "disabled": {
+            "$value": "{color.coolGray.750}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.gray.900}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.gray.900}",
+            "$type": "color"
+          }
+        },
+        "surface": {
+          "$value": "{color.coolGray.850}",
+          "$type": "color"
+        },
+        "weak": {
+          "disabled": {
+            "$value": "{color.coolGray.800}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.coolGray.800}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.coolGray.750}",
+            "$type": "color"
+          }
+        }
+      },
+      "positive": {
+        "solid": {
+          "$value": "{color.green.500}",
+          "$type": "color"
+        },
+        "weak": {
+          "disabled": {
+            "$value": "{color.coolGray.850}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.coolGray.850}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.coolGray.800}",
+            "$type": "color"
+          }
+        }
+      }
+    },
+    "border": {
+      "neutral": {
+        "subtle": {
+          "$value": "{color.coolGray.750}",
+          "$type": "color"
+        }
+      }
+    },
+    "fg": {
+      "brand": {
+        "contrast": {
+          "disabled": {
+            "$value": "{color.coolGray.550}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.red.400}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.red.500}",
+            "$type": "color"
+          }
+        },
+        "onSolid": {
+          "disabled": {
+            "$value": "{color.gray.0}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.gray.0}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.gray.200}",
+            "$type": "color"
+          }
+        }
+      },
+      "neutral": {
+        "contrast": {
+          "disabled": {
+            "$value": "{color.coolGray.675}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.coolGray.250}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.coolGray.150}",
+            "$type": "color"
+          }
+        },
+        "default": {
+          "$value": "{color.gray.0}",
+          "$type": "color",
+          "$description": "일반적인 콘텐츠에 사용되는 기본 색상입니다."
+        },
+        "ghost": {
+          "$value": "{color.coolGray.750}",
+          "$type": "color"
+        },
+        "muted": {
+          "$value": "{color.coolGray.350}",
+          "$type": "color"
+        },
+        "onSolid": {
+          "disabled": {
+            "$value": "{color.gray.0}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.gray.0}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.gray.200}",
+            "$type": "color"
+          }
+        },
+        "placeholder": {
+          "$value": "{color.gray.300}",
+          "$type": "color"
+        },
+        "solid": {
+          "$value": "{color.gray.900}",
+          "$type": "color"
+        },
+        "subtle": {
+          "$value": "{color.coolGray.150}",
+          "$type": "color"
+        },
+        "subtlest": {
+          "$value": "{color.gray.200}",
+          "$type": "color"
+        },
+        "weak": {
+          "$value": "{color.coolGray.500}",
+          "$type": "color"
+        }
+      },
+      "positive": {
+        "contrast": {
+          "disabled": {
+            "$value": "{color.coolGray.550}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.green.500}",
+            "$type": "color"
+          },
+          "pressed": {
+            "$value": "{color.green.600}",
+            "$type": "color"
+          }
+        },
+        "onSolid": {
+          "$value": "{color.gray.0}",
+          "$type": "color"
+        }
+      }
+    },
+    "layer": {
+      "basement": {
+        "$value": "{color.coolGray.900}",
+        "$type": "color",
+        "$description": "화면 최하단에 위치하는 배경 레이어"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "page": {
+    "container": {
+      "bg": {
+        "basement": {
+          "$value": "{color.layer.basement}",
+          "$type": "color"
+        },
+        "neutralWeak": {
+          "$value": "{color.bg.neutral.weak.enabled}",
+          "$type": "color"
+        }
+      }
+    }
+  }
+}

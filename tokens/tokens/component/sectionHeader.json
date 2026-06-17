@@ -1,0 +1,30 @@
+{
+  "sectionHeader": {
+    "container": {
+      "gap-x": {
+        "ad": {
+          "$value": "{spacing.gap-x.xxs}",
+          "$type": "space"
+        },
+        "disclosure": {
+          "$value": "{spacing.gap-x.sm}",
+          "$type": "space"
+        }
+      },
+      "padding-y": {
+        "$value": "{spacing.padding.none}",
+        "$type": "space"
+      }
+    },
+    "title": {
+      "color": {
+        "$value": "{color.fg.neutral.default}",
+        "$type": "color"
+      },
+      "typography": {
+        "$value": "{typography.subtitle.lg}",
+        "$type": "typography"
+      }
+    }
+  }
+}

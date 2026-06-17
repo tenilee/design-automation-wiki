@@ -1,0 +1,48 @@
+{
+  "section": {
+    "container": {
+      "gap-y": {
+        "$value": "{spacing.gap-y.xxl}",
+        "$type": "space"
+      },
+      "padding-bottom": {
+        "md": {
+          "$value": "{spacing.padding.xxl}",
+          "$type": "space"
+        },
+        "none": {
+          "$value": "{spacing.padding.none}",
+          "$type": "space"
+        },
+        "sm": {
+          "$value": "{spacing.padding.lg}",
+          "$type": "space"
+        }
+      },
+      "padding-top": {
+        "md": {
+          "$value": "{spacing.padding.xxl}",
+          "$type": "space"
+        },
+        "none": {
+          "$value": "{spacing.padding.none}",
+          "$type": "space"
+        },
+        "sm": {
+          "$value": "{spacing.padding.lg}",
+          "$type": "space"
+        }
+      },
+      "padding-x": {
+        "none": {
+          "$value": "{spacing.padding.none}",
+          "$type": "space"
+        },
+        "page": {
+          "$value": "{spacing.padding.xl}",
+          "$type": "space"
+        }
+      }
+    }
+  }
+}

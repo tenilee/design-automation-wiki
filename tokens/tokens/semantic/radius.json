@@ -1,0 +1,28 @@
+{
+  "radius": {
+    "full": {
+      "$value": "{radius.9999}",
+      "$type": "borderRadius"
+    },
+    "lg": {
+      "$value": "{radius.12}",
+      "$type": "borderRadius"
+    },
+    "md": {
+      "$value": "{radius.8}",
+      "$type": "borderRadius"
+    },
+    "sm": {
+      "$value": "{radius.6}",
+      "$type": "borderRadius"
+    },
+    "xs": {
+      "$value": "{radius.4}",
+      "$type": "borderRadius"
+    },
+    "xxs": {
+      "$value": "{radius.2}",
+      "$type": "borderRadius"
+    }
+  }
+}
