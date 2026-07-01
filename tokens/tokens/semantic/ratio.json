@@ -1,0 +1,41 @@
+{
+  "ratio": {
+    "1x1": {
+      "$value": "{ratio.1}",
+      "$type": "text",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "4x5": {
+      "$value": "{ratio.0_8}",
+      "$type": "text",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "scale": {
+      "0_3": {
+        "$value": "{ratio.0_3}",
+        "$type": "text",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    }
+  }
+}

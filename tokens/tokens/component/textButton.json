@@ -1,5 +1,20 @@
 {
   "textButton": {
+    "border": {
+      "width": {
+        "underline": {
+          "$value": "{sizing.width.thin}",
+          "$type": "size",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      }
+    },
     "container": {
       "gap-x": {
         "rightIcon": {
@@ -8,7 +23,35 @@
         }
       }
     },
+    "content": {
+      "gap-y": {
+        "underline": {
+          "$value": "{spacing.gap-y.xxxs}",
+          "$type": "space",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      }
+    },
     "icon": {
+      "asset": {
+        "chevronRight": {
+          "$value": "{icon.indicator.chevronRight}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      },
       "color": {
         "disabled": {
           "$value": "{color.fg.neutral.contrast.disabled}",
@@ -22,7 +65,7 @@
         },
         "neutral": {
           "enabled": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$value": "{color.fg.neutral.contrast.default}",
             "$type": "color"
           }
         },
@@ -41,7 +84,7 @@
       },
       "size": {
         "rightIcon": {
-          "$value": "{sizing.icon.xxxs}",
+          "$value": "{sizing.height.xxxxxs}",
           "$type": "size"
         }
       }
@@ -60,7 +103,7 @@
         },
         "neutral": {
           "enabled": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$value": "{color.fg.neutral.contrast.default}",
             "$type": "color"
           }
         },

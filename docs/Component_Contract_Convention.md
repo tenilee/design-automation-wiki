@@ -225,7 +225,7 @@ Owner: Platform Design System
 ```
 Status: Core
 Purpose: 섹션 제목과 선택적 우측 액션을 표시하는 헤더입니다.
-Use when: productCardGrid, carousel, textBlock 등 콘텐츠 섹션의 상단에 제목이 필요할 때.
+Use when: productCardGrid, carousel, Post 등 콘텐츠 섹션의 상단에 제목이 필요할 때.
 Avoid when: 페이지 최상단 타이틀에는 navigationBar를 사용합니다.
 Key props:
 - variant [required] base | disclosure | ad
@@ -300,14 +300,14 @@ Key props:
 - contentPaddingBottom [optional] none | sm | md | lg | xl
 Composition:
 - sectionHeader [0–1]
-- image | textBlock | productCardGrid | productCardCarousel | button [1] (택 1)
+- image | Post | productCardGrid | productCardCarousel | button [1] (택 1)
 Order: fixed (sectionHeader → content)
 Owner: Platform Design System
 ```
 
 ---
 
-### Beta 컴포넌트 — DSIcon
+### Core 컴포넌트 — Icon
 
 ```
 Status: Beta

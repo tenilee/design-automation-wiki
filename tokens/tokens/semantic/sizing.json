@@ -1,95 +1,89 @@
 {
   "sizing": {
     "height": {
-      "divider-line": {
-        "$value": "{sizing.1}",
-        "$type": "size"
-      },
-      "divider-section": {
-        "$value": "{sizing.10}",
-        "$type": "size"
-      },
       "lg": {
-        "$value": "{sizing.40}",
-        "$type": "size"
-      },
-      "md": {
-        "$value": "{sizing.36}",
-        "$type": "size"
-      },
-      "sm": {
         "$value": "{sizing.30}",
         "$type": "size"
       },
-      "xl": {
-        "$value": "{sizing.46}",
-        "$type": "size"
-      },
-      "xs": {
-        "$value": "{sizing.20}",
-        "$type": "size"
-      },
-      "xxl": {
-        "$value": "{sizing.48}",
-        "$type": "size"
-      },
-      "xxs": {
-        "$value": "{sizing.18}",
-        "$type": "size"
-      },
-      "xxxl": {
-        "$value": "{sizing.50}",
-        "$type": "size"
-      },
-      "xxxs": {
-        "$value": "{sizing.16}",
-        "$type": "size"
-      },
-      "xxxxs": {
-        "$value": "{sizing.12}",
-        "$type": "size"
-      }
-    },
-    "icon": {
-      "lg": {
-        "$value": "{sizing.24}",
-        "$type": "size"
-      },
       "md": {
-        "$value": "{sizing.20}",
-        "$type": "size"
-      },
-      "sm": {
-        "$value": "{sizing.18}",
-        "$type": "size"
-      },
-      "xl": {
         "$value": "{sizing.28}",
         "$type": "size"
       },
-      "xs": {
-        "$value": "{sizing.16}",
+      "sm": {
+        "$value": "{sizing.24}",
         "$type": "size"
       },
-      "xxl": {
-        "$value": "{sizing.30}",
-        "$type": "size"
-      },
-      "xxs": {
-        "$value": "{sizing.12}",
-        "$type": "size"
-      },
-      "xxxl": {
+      "xl": {
         "$value": "{sizing.36}",
         "$type": "size"
       },
-      "xxxs": {
-        "$value": "{sizing.10}",
+      "xs": {
+        "$value": "{sizing.20}",
         "$type": "size"
       },
-      "xxxxs": {
-        "$value": "{sizing.8}",
+      "xxl": {
+        "$value": "{sizing.40}",
         "$type": "size"
+      },
+      "xxs": {
+        "$value": "{sizing.18}",
+        "$type": "size"
+      },
+      "xxxl": {
+        "$value": "{sizing.46}",
+        "$type": "size"
+      },
+      "xxxs": {
+        "$value": "{sizing.16}",
+        "$type": "size"
+      },
+      "xxxxl": {
+        "$value": "{sizing.48}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "xxxxs": {
+        "$value": "{sizing.12}",
+        "$type": "size"
+      },
+      "xxxxxl": {
+        "$value": "{sizing.50}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "xxxxxs": {
+        "$value": "{sizing.10}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "xxxxxxs": {
+        "$value": "{sizing.8}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
       }
     },
     "width": {
@@ -100,6 +94,17 @@
       "sm": {
         "$value": "{sizing.20}",
         "$type": "size"
+      },
+      "thin": {
+        "$value": "{sizing.1}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
       },
       "xl": {
         "$value": "{sizing.30}",

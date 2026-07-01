@@ -1,0 +1,87 @@
+{
+  "image": {
+    "badge": {
+      "care": {
+        "$value": "{image.care.default}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "edition1": {
+        "$value": "{image.edition1.default}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "edition1fill": {
+        "$value": "{image.edition1.fill}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "mercari": {
+        "$value": "{image.mercari.default}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "official": {
+        "$value": "{image.official.default}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "pro": {
+        "$value": "{image.pro.default}",
+        "$type": "asset"
+      },
+      "todaydeal": {
+        "$value": "{image.todayDeal.default}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "video": {
+        "$value": "{image.video.default}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    }
+  }
+}

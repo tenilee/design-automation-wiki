@@ -1,0 +1,30 @@
+{
+  "ratio": {
+    "1": {
+      "$value": "1",
+      "$type": "text",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "0_3": {
+      "$value": "0.3",
+      "$type": "text"
+    },
+    "0_8": {
+      "$value": "0.8",
+      "$type": "text",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    }
+  }
+}

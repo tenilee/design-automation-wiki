@@ -1,0 +1,50 @@
+{
+  "image": {
+    "care": {
+      "default": {
+        "$value": "asset://image/care/default",
+        "$type": "asset"
+      }
+    },
+    "edition1": {
+      "default": {
+        "$value": "asset://image/edition1/default",
+        "$type": "asset"
+      },
+      "fill": {
+        "$value": "asset://image/edition1/fill",
+        "$type": "asset"
+      }
+    },
+    "mercari": {
+      "default": {
+        "$value": "asset://image/mercari/default",
+        "$type": "asset"
+      }
+    },
+    "official": {
+      "default": {
+        "$value": "asset://image/official/default",
+        "$type": "asset"
+      }
+    },
+    "pro": {
+      "default": {
+        "$value": "asset://image/pro/default",
+        "$type": "asset"
+      }
+    },
+    "todayDeal": {
+      "default": {
+        "$value": "asset://image/today_deal/default",
+        "$type": "asset"
+      }
+    },
+    "video": {
+      "default": {
+        "$value": "asset://image/video/default",
+        "$type": "asset"
+      }
+    }
+  }
+}

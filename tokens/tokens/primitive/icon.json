@@ -1,0 +1,872 @@
+{
+  "icon": {
+    "gnb": {
+      "feed": {
+        "off": {
+          "$value": "asset://icon/gnb/feed/off",
+          "$type": "asset"
+        },
+        "on": {
+          "$value": "asset://icon/gnb/feed/on",
+          "$type": "asset"
+        }
+      },
+      "home": {
+        "off": {
+          "$value": "asset://icon/gnb/home/off",
+          "$type": "asset"
+        },
+        "on": {
+          "$value": "asset://icon/gnb/home/on",
+          "$type": "asset"
+        }
+      },
+      "my": {
+        "off": {
+          "$value": "asset://icon/gnb/my/off",
+          "$type": "asset"
+        },
+        "on": {
+          "$value": "asset://icon/gnb/my/on",
+          "$type": "asset"
+        }
+      },
+      "talk": {
+        "off": {
+          "$value": "asset://icon/gnb/talk/off",
+          "$type": "asset"
+        },
+        "on": {
+          "$value": "asset://icon/gnb/talk/on",
+          "$type": "asset"
+        }
+      },
+      "upload": {
+        "off": {
+          "$value": "asset://icon/gnb/upload/off",
+          "$type": "asset"
+        },
+        "on": {
+          "$value": "asset://icon/gnb/upload/on",
+          "$type": "asset"
+        }
+      }
+    },
+    "system": {
+      "adApply": {
+        "line": {
+          "$value": "asset://icon/system/ad_apply/line",
+          "$type": "asset"
+        }
+      },
+      "admanage": {
+        "line": {
+          "$value": "asset://icon/system/admanage/line",
+          "$type": "asset"
+        }
+      },
+      "alert": {
+        "circleFill": {
+          "$value": "asset://icon/system/alert/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/alert/circle_line",
+          "$type": "asset"
+        }
+      },
+      "arrow": {
+        "downCircleFill": {
+          "$value": "asset://icon/system/arrow/down_circle_fill",
+          "$type": "asset"
+        },
+        "downCircleLine": {
+          "$value": "asset://icon/system/arrow/down_circle_line",
+          "$type": "asset"
+        },
+        "downLine": {
+          "$value": "asset://icon/system/arrow/down_line",
+          "$type": "asset"
+        },
+        "leftCircleFill": {
+          "$value": "asset://icon/system/arrow/left_circle_fill",
+          "$type": "asset"
+        },
+        "leftCircleLine": {
+          "$value": "asset://icon/system/arrow/left_circle_line",
+          "$type": "asset"
+        },
+        "leftLine": {
+          "$value": "asset://icon/system/arrow/left_line",
+          "$type": "asset"
+        },
+        "rightCircleFill": {
+          "$value": "asset://icon/system/arrow/right_circle_fill",
+          "$type": "asset"
+        },
+        "rightCircleLine": {
+          "$value": "asset://icon/system/arrow/right_circle_line",
+          "$type": "asset"
+        },
+        "rightLine": {
+          "$value": "asset://icon/system/arrow/right_line",
+          "$type": "asset"
+        },
+        "upCircleFill": {
+          "$value": "asset://icon/system/arrow/up_circle_fill",
+          "$type": "asset"
+        },
+        "upCircleLine": {
+          "$value": "asset://icon/system/arrow/up_circle_line",
+          "$type": "asset"
+        },
+        "upLine": {
+          "$value": "asset://icon/system/arrow/up_line",
+          "$type": "asset"
+        }
+      },
+      "bankaccount": {
+        "line": {
+          "$value": "asset://icon/system/bankaccount/line",
+          "$type": "asset"
+        }
+      },
+      "blank": {
+        "line": {
+          "$value": "asset://icon/system/blank/line",
+          "$type": "asset"
+        }
+      },
+      "block": {
+        "line": {
+          "$value": "asset://icon/system/block/line",
+          "$type": "asset"
+        }
+      },
+      "call": {
+        "line": {
+          "$value": "asset://icon/system/call/line",
+          "$type": "asset"
+        }
+      },
+      "camera": {
+        "fill": {
+          "$value": "asset://icon/system/camera/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/camera/line",
+          "$type": "asset"
+        }
+      },
+      "cancel": {
+        "circleFill": {
+          "$value": "asset://icon/system/cancel/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/cancel/circle_line",
+          "$type": "asset"
+        },
+        "defaultLine": {
+          "$value": "asset://icon/system/cancel/default_line",
+          "$type": "asset"
+        }
+      },
+      "cart": {
+        "line": {
+          "$value": "asset://icon/system/cart/line",
+          "$type": "asset"
+        }
+      },
+      "check": {
+        "circleFill": {
+          "$value": "asset://icon/system/check/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/check/circle_line",
+          "$type": "asset"
+        },
+        "defaultLine": {
+          "$value": "asset://icon/system/check/default_line",
+          "$type": "asset"
+        }
+      },
+      "chevron": {
+        "downLine": {
+          "$value": "asset://icon/system/chevron/down_line",
+          "$type": "asset"
+        },
+        "leftLine": {
+          "$value": "asset://icon/system/chevron/left_line",
+          "$type": "asset"
+        },
+        "rightLine": {
+          "$value": "asset://icon/system/chevron/right_line",
+          "$type": "asset"
+        },
+        "upLine": {
+          "$value": "asset://icon/system/chevron/up_line",
+          "$type": "asset"
+        }
+      },
+      "circleEmpty": {
+        "line": {
+          "$value": "asset://icon/system/circle_empty/line",
+          "$type": "asset"
+        }
+      },
+      "circledot": {
+        "line": {
+          "$value": "asset://icon/system/circledot/line",
+          "$type": "asset"
+        }
+      },
+      "clock": {
+        "fill": {
+          "$value": "asset://icon/system/clock/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/clock/line",
+          "$type": "asset"
+        }
+      },
+      "comment": {
+        "fill": {
+          "$value": "asset://icon/system/comment/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/comment/line",
+          "$type": "asset"
+        }
+      },
+      "copy": {
+        "line": {
+          "$value": "asset://icon/system/copy/line",
+          "$type": "asset"
+        }
+      },
+      "deal": {
+        "fill": {
+          "$value": "asset://icon/system/deal/fill",
+          "$type": "asset"
+        }
+      },
+      "delete": {
+        "line": {
+          "$value": "asset://icon/system/delete/line",
+          "$type": "asset"
+        }
+      },
+      "discount": {
+        "fill": {
+          "$value": "asset://icon/system/discount/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/discount/line",
+          "$type": "asset"
+        }
+      },
+      "dots": {
+        "circleFill": {
+          "$value": "asset://icon/system/dots/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/dots/circle_line",
+          "$type": "asset"
+        },
+        "horizontalFill": {
+          "$value": "asset://icon/system/dots/horizontal_fill",
+          "$type": "asset"
+        },
+        "horizontalOutline": {
+          "$value": "asset://icon/system/dots/horizontal_outline",
+          "$type": "asset"
+        },
+        "verticalLine": {
+          "$value": "asset://icon/system/dots/vertical_line",
+          "$type": "asset"
+        }
+      },
+      "edit": {
+        "photoLine": {
+          "$value": "asset://icon/system/edit/photo_line",
+          "$type": "asset"
+        },
+        "productLine": {
+          "$value": "asset://icon/system/edit/product_line",
+          "$type": "asset"
+        },
+        "textLine": {
+          "$value": "asset://icon/system/edit/text_line",
+          "$type": "asset"
+        }
+      },
+      "email": {
+        "line": {
+          "$value": "asset://icon/system/email/line",
+          "$type": "asset"
+        }
+      },
+      "exit": {
+        "fill": {
+          "$value": "asset://icon/system/exit/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/exit/line",
+          "$type": "asset"
+        }
+      },
+      "externalLink": {
+        "line": {
+          "$value": "asset://icon/system/external_link/line",
+          "$type": "asset"
+        }
+      },
+      "face": {
+        "sadFill": {
+          "$value": "asset://icon/system/face/sad_fill",
+          "$type": "asset"
+        },
+        "sadLine": {
+          "$value": "asset://icon/system/face/sad_line",
+          "$type": "asset"
+        },
+        "smileFill": {
+          "$value": "asset://icon/system/face/smile_fill",
+          "$type": "asset"
+        },
+        "smileLine": {
+          "$value": "asset://icon/system/face/smile_line",
+          "$type": "asset"
+        }
+      },
+      "faq": {
+        "line": {
+          "$value": "asset://icon/system/faq/line",
+          "$type": "asset"
+        }
+      },
+      "filter": {
+        "line": {
+          "$value": "asset://icon/system/filter/line",
+          "$type": "asset"
+        }
+      },
+      "gift": {
+        "line": {
+          "$value": "asset://icon/system/gift/line",
+          "$type": "asset"
+        }
+      },
+      "graph": {
+        "line": {
+          "$value": "asset://icon/system/graph/line",
+          "$type": "asset"
+        }
+      },
+      "hashtag": {
+        "line": {
+          "$value": "asset://icon/system/hashtag/line",
+          "$type": "asset"
+        }
+      },
+      "headset": {
+        "fill": {
+          "$value": "asset://icon/system/headset/fill",
+          "$type": "asset"
+        }
+      },
+      "heart": {
+        "fill": {
+          "$value": "asset://icon/system/heart/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/heart/line",
+          "$type": "asset"
+        },
+        "outline": {
+          "$value": "asset://icon/system/heart/outline",
+          "$type": "asset"
+        }
+      },
+      "hide": {
+        "fill": {
+          "$value": "asset://icon/system/hide/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/hide/line",
+          "$type": "asset"
+        }
+      },
+      "hint": {
+        "line": {
+          "$value": "asset://icon/system/hint/line",
+          "$type": "asset"
+        }
+      },
+      "home": {
+        "fill": {
+          "$value": "asset://icon/system/home/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/home/line",
+          "$type": "asset"
+        }
+      },
+      "image": {
+        "line": {
+          "$value": "asset://icon/system/image/line",
+          "$type": "asset"
+        }
+      },
+      "info": {
+        "circleFill": {
+          "$value": "asset://icon/system/info/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/info/circle_line",
+          "$type": "asset"
+        }
+      },
+      "keyboardDown": {
+        "line": {
+          "$value": "asset://icon/system/keyboard_down/line",
+          "$type": "asset"
+        }
+      },
+      "link": {
+        "line": {
+          "$value": "asset://icon/system/link/line",
+          "$type": "asset"
+        }
+      },
+      "list": {
+        "1columnFill": {
+          "$value": "asset://icon/system/list/1column_fill",
+          "$type": "asset"
+        },
+        "3columnFill": {
+          "$value": "asset://icon/system/list/3column_fill",
+          "$type": "asset"
+        }
+      },
+      "local": {
+        "line": {
+          "$value": "asset://icon/system/local/line",
+          "$type": "asset"
+        }
+      },
+      "location": {
+        "fill": {
+          "$value": "asset://icon/system/location/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/location/line",
+          "$type": "asset"
+        }
+      },
+      "medal": {
+        "line": {
+          "$value": "asset://icon/system/medal/line",
+          "$type": "asset"
+        }
+      },
+      "meet": {
+        "fill": {
+          "$value": "asset://icon/system/meet/fill",
+          "$type": "asset"
+        }
+      },
+      "menu": {
+        "line": {
+          "$value": "asset://icon/system/menu/line",
+          "$type": "asset"
+        }
+      },
+      "minus": {
+        "circleFill": {
+          "$value": "asset://icon/system/minus/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/minus/circle_line",
+          "$type": "asset"
+        },
+        "defaultLine": {
+          "$value": "asset://icon/system/minus/default_line",
+          "$type": "asset"
+        }
+      },
+      "mobile": {
+        "fill": {
+          "$value": "asset://icon/system/mobile/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/mobile/line",
+          "$type": "asset"
+        }
+      },
+      "mute": {
+        "offFill": {
+          "$value": "asset://icon/system/mute/off_fill",
+          "$type": "asset"
+        },
+        "onFill": {
+          "$value": "asset://icon/system/mute/on_fill",
+          "$type": "asset"
+        }
+      },
+      "noti": {
+        "addLine": {
+          "$value": "asset://icon/system/noti/add_line",
+          "$type": "asset"
+        },
+        "addedLine": {
+          "$value": "asset://icon/system/noti/added_line",
+          "$type": "asset"
+        },
+        "defaultFill": {
+          "$value": "asset://icon/system/noti/default_fill",
+          "$type": "asset"
+        },
+        "defaultLine": {
+          "$value": "asset://icon/system/noti/default_line",
+          "$type": "asset"
+        }
+      },
+      "notice": {
+        "line": {
+          "$value": "asset://icon/system/notice/line",
+          "$type": "asset"
+        }
+      },
+      "order": {
+        "horizontalLine": {
+          "$value": "asset://icon/system/order/horizontal_line",
+          "$type": "asset"
+        },
+        "verticalLine": {
+          "$value": "asset://icon/system/order/vertical_line",
+          "$type": "asset"
+        }
+      },
+      "package": {
+        "line": {
+          "$value": "asset://icon/system/package/line",
+          "$type": "asset"
+        }
+      },
+      "pause": {
+        "fill": {
+          "$value": "asset://icon/system/pause/fill",
+          "$type": "asset"
+        }
+      },
+      "play": {
+        "fill": {
+          "$value": "asset://icon/system/play/fill",
+          "$type": "asset"
+        }
+      },
+      "plus": {
+        "circleFill": {
+          "$value": "asset://icon/system/plus/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/plus/circle_line",
+          "$type": "asset"
+        },
+        "defaultLine": {
+          "$value": "asset://icon/system/plus/default_line",
+          "$type": "asset"
+        }
+      },
+      "point": {
+        "circleFill": {
+          "$value": "asset://icon/system/point/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/point/circle_line",
+          "$type": "asset"
+        }
+      },
+      "product": {
+        "addLine": {
+          "$value": "asset://icon/system/product/add_line",
+          "$type": "asset"
+        },
+        "copyLine": {
+          "$value": "asset://icon/system/product/copy_line",
+          "$type": "asset"
+        },
+        "defaultLine": {
+          "$value": "asset://icon/system/product/default_line",
+          "$type": "asset"
+        },
+        "statusLine": {
+          "$value": "asset://icon/system/product/status_line",
+          "$type": "asset"
+        },
+        "upLine": {
+          "$value": "asset://icon/system/product/up_line",
+          "$type": "asset"
+        }
+      },
+      "radar": {
+        "line": {
+          "$value": "asset://icon/system/radar/line",
+          "$type": "asset"
+        }
+      },
+      "ranking": {
+        "line": {
+          "$value": "asset://icon/system/ranking/line",
+          "$type": "asset"
+        }
+      },
+      "receipt": {
+        "fill": {
+          "$value": "asset://icon/system/receipt/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/receipt/line",
+          "$type": "asset"
+        }
+      },
+      "reload": {
+        "line": {
+          "$value": "asset://icon/system/reload/line",
+          "$type": "asset"
+        }
+      },
+      "report": {
+        "fill": {
+          "$value": "asset://icon/system/report/fill",
+          "$type": "asset"
+        }
+      },
+      "resgistration": {
+        "line": {
+          "$value": "asset://icon/system/resgistration/line",
+          "$type": "asset"
+        }
+      },
+      "search": {
+        "line": {
+          "$value": "asset://icon/system/search/line",
+          "$type": "asset"
+        }
+      },
+      "security": {
+        "line": {
+          "$value": "asset://icon/system/security/line",
+          "$type": "asset"
+        }
+      },
+      "settings": {
+        "fill": {
+          "$value": "asset://icon/system/settings/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/settings/line",
+          "$type": "asset"
+        }
+      },
+      "share": {
+        "line": {
+          "$value": "asset://icon/system/share/line",
+          "$type": "asset"
+        }
+      },
+      "shortformview": {
+        "fill": {
+          "$value": "asset://icon/system/shortformview/fill",
+          "$type": "asset"
+        }
+      },
+      "star": {
+        "fill": {
+          "$value": "asset://icon/system/star/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/star/line",
+          "$type": "asset"
+        }
+      },
+      "store": {
+        "defaultLine": {
+          "$value": "asset://icon/system/store/default_line",
+          "$type": "asset"
+        },
+        "followLine": {
+          "$value": "asset://icon/system/store/follow_line",
+          "$type": "asset"
+        },
+        "followingLine": {
+          "$value": "asset://icon/system/store/following_line",
+          "$type": "asset"
+        },
+        "proLine": {
+          "$value": "asset://icon/system/store/pro_line",
+          "$type": "asset"
+        }
+      },
+      "symbol": {
+        "thunderFill": {
+          "$value": "asset://icon/system/symbol/thunder_fill",
+          "$type": "asset"
+        },
+        "thunderLine": {
+          "$value": "asset://icon/system/symbol/thunder_line",
+          "$type": "asset"
+        }
+      },
+      "talk": {
+        "defaultFill": {
+          "$value": "asset://icon/system/talk/default_fill",
+          "$type": "asset"
+        },
+        "defaultLine": {
+          "$value": "asset://icon/system/talk/default_line",
+          "$type": "asset"
+        },
+        "dotsFill": {
+          "$value": "asset://icon/system/talk/dots_fill",
+          "$type": "asset"
+        },
+        "dotsLine": {
+          "$value": "asset://icon/system/talk/dots_line",
+          "$type": "asset"
+        }
+      },
+      "thumbs": {
+        "downFill": {
+          "$value": "asset://icon/system/thumbs/down_fill",
+          "$type": "asset"
+        },
+        "downLine": {
+          "$value": "asset://icon/system/thumbs/down_line",
+          "$type": "asset"
+        },
+        "upFill": {
+          "$value": "asset://icon/system/thumbs/up_fill",
+          "$type": "asset"
+        },
+        "upLine": {
+          "$value": "asset://icon/system/thumbs/up_line",
+          "$type": "asset"
+        }
+      },
+      "tip": {
+        "circleFill": {
+          "$value": "asset://icon/system/tip/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/tip/circle_line",
+          "$type": "asset"
+        }
+      },
+      "triangle": {
+        "downFill": {
+          "$value": "asset://icon/system/triangle/down_fill",
+          "$type": "asset"
+        },
+        "upFill": {
+          "$value": "asset://icon/system/triangle/up_fill",
+          "$type": "asset"
+        }
+      },
+      "trohpy": {
+        "line": {
+          "$value": "asset://icon/system/trohpy/line",
+          "$type": "asset"
+        }
+      },
+      "truck": {
+        "line": {
+          "$value": "asset://icon/system/truck/line",
+          "$type": "asset"
+        }
+      },
+      "unnoti": {
+        "fill": {
+          "$value": "asset://icon/system/unnoti/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/unnoti/line",
+          "$type": "asset"
+        }
+      },
+      "user": {
+        "fill": {
+          "$value": "asset://icon/system/user/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/user/line",
+          "$type": "asset"
+        }
+      },
+      "video": {
+        "fill": {
+          "$value": "asset://icon/system/video/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/video/line",
+          "$type": "asset"
+        }
+      },
+      "view": {
+        "fill": {
+          "$value": "asset://icon/system/view/fill",
+          "$type": "asset"
+        },
+        "line": {
+          "$value": "asset://icon/system/view/line",
+          "$type": "asset"
+        }
+      },
+      "warning": {
+        "line": {
+          "$value": "asset://icon/system/warning/line",
+          "$type": "asset"
+        }
+      },
+      "won": {
+        "circleFill": {
+          "$value": "asset://icon/system/won/circle_fill",
+          "$type": "asset"
+        },
+        "circleLine": {
+          "$value": "asset://icon/system/won/circle_line",
+          "$type": "asset"
+        },
+        "defaultLine": {
+          "$value": "asset://icon/system/won/default_line",
+          "$type": "asset"
+        }
+      }
+    }
+  }
+}

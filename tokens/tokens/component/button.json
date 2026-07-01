@@ -1,18 +1,31 @@
 {
   "button": {
+    "border": {
+      "color": {
+        "$value": "{color.border.neutral.subtle}",
+        "$type": "color"
+      },
+      "width": {
+        "$value": "{sizing.width.thin}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
     "container": {
-      "bg": {
+      "color": {
         "brandSolid": {
           "disabled": {
             "$value": "{color.bg.brand.solid.disabled}",
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.bg.brand.solid.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.bg.brand.solid.pressed}",
+            "$value": "{color.bg.brand.solid.default}",
             "$type": "color"
           },
           "pressed": {
@@ -26,11 +39,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.bg.brand.weak.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.bg.brand.weak.pressed}",
+            "$value": "{color.bg.brand.weak.default}",
             "$type": "color"
           },
           "pressed": {
@@ -48,7 +57,7 @@
             "$type": "color"
           },
           "pressed": {
-            "$value": "{color.bg.neutral.weak.enabled}",
+            "$value": "{color.bg.neutral.weak.default}",
             "$type": "color"
           }
         },
@@ -58,11 +67,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.bg.neutral.solid.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.bg.neutral.solid.pressed}",
+            "$value": "{color.bg.neutral.solid.default}",
             "$type": "color"
           },
           "pressed": {
@@ -76,11 +81,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.bg.neutral.weak.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.bg.neutral.weak.pressed}",
+            "$value": "{color.bg.neutral.weak.default}",
             "$type": "color"
           },
           "pressed": {
@@ -94,76 +95,34 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.bg.positive.weak.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.bg.positive.weak.pressed}",
+            "$value": "{color.bg.positive.weak.default}",
             "$type": "color"
           },
           "pressed": {
             "$value": "{color.bg.positive.weak.pressed}",
             "$type": "color"
           }
-        }
-      },
-      "border": {
-        "neutralOutline": {
-          "disabled": {
-            "$value": "{color.border.neutral.subtle}",
-            "$type": "color"
-          },
-          "enabled": {
-            "$value": "{color.border.neutral.subtle}",
-            "$type": "color"
-          },
-          "pressed": {
-            "$value": "{color.border.neutral.subtle}",
-            "$type": "color"
-          }
-        }
-      },
-      "gap-x": {
-        "size-lg": {
-          "$value": "{spacing.gap-x.xs}",
-          "$type": "space"
-        },
-        "size-md": {
-          "$value": "{spacing.gap-x.xs}",
-          "$type": "space"
-        },
-        "size-sm": {
-          "$value": "{spacing.gap-x.xs}",
-          "$type": "space"
-        },
-        "size-xl": {
-          "$value": "{spacing.gap-x.xs}",
-          "$type": "space"
-        },
-        "size-xs": {
-          "$value": "{spacing.gap-x.xs}",
-          "$type": "space"
         }
       },
       "height": {
         "size-lg": {
-          "$value": "{sizing.height.xl}",
-          "$type": "size"
-        },
-        "size-md": {
-          "$value": "{sizing.height.lg}",
-          "$type": "size"
-        },
-        "size-sm": {
-          "$value": "{sizing.height.md}",
-          "$type": "size"
-        },
-        "size-xl": {
           "$value": "{sizing.height.xxxl}",
           "$type": "size"
         },
+        "size-md": {
+          "$value": "{sizing.height.xxl}",
+          "$type": "size"
+        },
+        "size-sm": {
+          "$value": "{sizing.height.xl}",
+          "$type": "size"
+        },
+        "size-xl": {
+          "$value": "{sizing.height.xxxxxl}",
+          "$type": "size"
+        },
         "size-xs": {
-          "$value": "{sizing.height.sm}",
+          "$value": "{sizing.height.lg}",
           "$type": "size"
         }
       },
@@ -212,122 +171,6 @@
         }
       }
     },
-    "icon": {
-      "color": {
-        "brandSolid": {
-          "disabled": {
-            "$value": "{color.fg.brand.onSolid.disabled}",
-            "$type": "color"
-          },
-          "enabled": {
-            "$value": "{color.fg.brand.onSolid.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.brand.onSolid.pressed}",
-            "$type": "color"
-          },
-          "pressed": {
-            "$value": "{color.fg.brand.onSolid.pressed}",
-            "$type": "color"
-          }
-        },
-        "brandWeak": {
-          "disabled": {
-            "$value": "{color.fg.brand.contrast.disabled}",
-            "$type": "color"
-          },
-          "enabled": {
-            "$value": "{color.fg.brand.contrast.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.brand.contrast.pressed}",
-            "$type": "color"
-          },
-          "pressed": {
-            "$value": "{color.fg.brand.contrast.pressed}",
-            "$type": "color"
-          }
-        },
-        "neutralSolid": {
-          "disabled": {
-            "$value": "{color.fg.neutral.onSolid.disabled}",
-            "$type": "color"
-          },
-          "enabled": {
-            "$value": "{color.fg.neutral.onSolid.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.neutral.onSolid.pressed}",
-            "$type": "color"
-          },
-          "pressed": {
-            "$value": "{color.fg.neutral.onSolid.pressed}",
-            "$type": "color"
-          }
-        },
-        "neutralWeak": {
-          "disabled": {
-            "$value": "{color.fg.neutral.contrast.disabled}",
-            "$type": "color"
-          },
-          "enabled": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.neutral.contrast.pressed}",
-            "$type": "color"
-          },
-          "pressed": {
-            "$value": "{color.fg.neutral.contrast.pressed}",
-            "$type": "color"
-          }
-        },
-        "positiveWeak": {
-          "disabled": {
-            "$value": "{color.fg.positive.contrast.disabled}",
-            "$type": "color"
-          },
-          "enabled": {
-            "$value": "{color.fg.positive.contrast.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.positive.contrast.pressed}",
-            "$type": "color"
-          },
-          "pressed": {
-            "$value": "{color.fg.positive.contrast.pressed}",
-            "$type": "color"
-          }
-        }
-      },
-      "size": {
-        "size-lg": {
-          "$value": "{sizing.icon.md}",
-          "$type": "size"
-        },
-        "size-md": {
-          "$value": "{sizing.icon.md}",
-          "$type": "size"
-        },
-        "size-sm": {
-          "$value": "{sizing.icon.sm}",
-          "$type": "size"
-        },
-        "size-xl": {
-          "$value": "{sizing.icon.md}",
-          "$type": "size"
-        },
-        "size-xs": {
-          "$value": "{sizing.icon.xs}",
-          "$type": "size"
-        }
-      }
-    },
     "label": {
       "color": {
         "brandSolid": {
@@ -336,11 +179,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.fg.brand.onSolid.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.brand.onSolid.pressed}",
+            "$value": "{color.fg.brand.onSolid.default}",
             "$type": "color"
           },
           "pressed": {
@@ -354,11 +193,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.fg.brand.contrast.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.brand.contrast.pressed}",
+            "$value": "{color.fg.brand.contrast.default}",
             "$type": "color"
           },
           "pressed": {
@@ -372,7 +207,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
+            "$value": "{color.fg.neutral.contrast.default}",
             "$type": "color"
           },
           "pressed": {
@@ -386,11 +221,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.fg.neutral.onSolid.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.neutral.onSolid.pressed}",
+            "$value": "{color.fg.neutral.onSolid.default}",
             "$type": "color"
           },
           "pressed": {
@@ -404,11 +235,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.neutral.contrast.pressed}",
+            "$value": "{color.fg.neutral.contrast.default}",
             "$type": "color"
           },
           "pressed": {
@@ -422,11 +249,7 @@
             "$type": "color"
           },
           "enabled": {
-            "$value": "{color.fg.positive.contrast.enabled}",
-            "$type": "color"
-          },
-          "loading": {
-            "$value": "{color.fg.positive.contrast.pressed}",
+            "$value": "{color.fg.positive.contrast.default}",
             "$type": "color"
           },
           "pressed": {

@@ -32,6 +32,20 @@
           }
         }
       },
+      "105": {
+        "$value": "105%",
+        "$type": "lineHeight",
+        "$description": "1.05",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
       "125": {
         "$value": "125%",
         "$type": "lineHeight",
@@ -74,6 +88,20 @@
             "codeSyntax": {
               "Web": "font.lineHeight.140"
             }
+          }
+        }
+      },
+      "145": {
+        "$value": "145%",
+        "$type": "lineHeight",
+        "$description": "1.45",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
           }
         }
       },
@@ -274,6 +302,19 @@
             "codeSyntax": {
               "Web": "font.size.28"
             }
+          }
+        }
+      },
+      "34": {
+        "$value": "34",
+        "$type": "fontSize",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
           }
         }
       }

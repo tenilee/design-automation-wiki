@@ -2,43 +2,43 @@
   "icon": {
     "size": {
       "lg": {
-        "$value": "{sizing.icon.lg}",
+        "$value": "{sizing.height.sm}",
         "$type": "size"
       },
       "md": {
-        "$value": "{sizing.icon.md}",
+        "$value": "{sizing.height.xs}",
         "$type": "size"
       },
       "sm": {
-        "$value": "{sizing.icon.sm}",
+        "$value": "{sizing.height.xxs}",
         "$type": "size"
       },
       "xl": {
-        "$value": "{sizing.icon.xl}",
+        "$value": "{sizing.height.md}",
         "$type": "size"
       },
       "xs": {
-        "$value": "{sizing.icon.xs}",
+        "$value": "{sizing.height.xxxs}",
         "$type": "size"
       },
       "xxl": {
-        "$value": "{sizing.icon.xxl}",
+        "$value": "{sizing.height.lg}",
         "$type": "size"
       },
       "xxs": {
-        "$value": "{sizing.icon.xxs}",
+        "$value": "{sizing.height.xxxxs}",
         "$type": "size"
       },
       "xxxl": {
-        "$value": "{sizing.icon.xxxl}",
+        "$value": "{sizing.height.xl}",
         "$type": "size"
       },
       "xxxs": {
-        "$value": "{sizing.icon.xxxs}",
+        "$value": "{sizing.height.xxxxxs}",
         "$type": "size"
       },
       "xxxxs": {
-        "$value": "{sizing.icon.xxxxs}",
+        "$value": "{sizing.height.xxxxxxs}",
         "$type": "size"
       }
     }

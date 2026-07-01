@@ -1,0 +1,133 @@
+{
+  "iconButton": {
+    "border": {
+      "color": {
+        "$value": "{color.border.neutral.subtle}",
+        "$type": "color"
+      },
+      "width": {
+        "$value": "{sizing.width.thin}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "container": {
+      "radius": {
+        "$value": "{radius.sm}",
+        "$type": "borderRadius"
+      },
+      "size": {
+        "size-lg": {
+          "$value": "{sizing.height.xxxl}",
+          "$type": "size"
+        },
+        "size-md": {
+          "$value": "{sizing.height.xxl}",
+          "$type": "size"
+        },
+        "size-xl": {
+          "$value": "{sizing.height.xxxxxl}",
+          "$type": "size"
+        }
+      }
+    },
+    "icon": {
+      "color": {
+        "ghost": {
+          "disabled": {
+            "$value": "{color.fg.neutral.subtlest}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.fg.neutral.default}",
+            "$type": "color"
+          }
+        },
+        "neutralOutline": {
+          "disabled": {
+            "$value": "{color.fg.neutral.subtlest}",
+            "$type": "color"
+          },
+          "enabled": {
+            "$value": "{color.fg.neutral.default}",
+            "$type": "color"
+          }
+        }
+      },
+      "size": {
+        "$value": "{sizing.height.xs}",
+        "$type": "size"
+      }
+    }
+  },
+  "iconButtonItem": {
+    "icon": {
+      "asset": {
+        "alarm": {
+          "$value": "{icon.action.noti}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "back": {
+          "$value": "{icon.action.back}",
+          "$type": "asset"
+        },
+        "blank": {
+          "$value": "{icon.placeholder.blank}",
+          "$type": "asset"
+        },
+        "cart": {
+          "$value": "{icon.action.cart}",
+          "$type": "asset"
+        },
+        "close": {
+          "$value": "{icon.action.close}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "home": {
+          "$value": "{icon.action.home}",
+          "$type": "asset"
+        },
+        "menu": {
+          "$value": "{icon.action.menu}",
+          "$type": "asset"
+        },
+        "setting": {
+          "$value": "{icon.action.setting}",
+          "$type": "asset"
+        },
+        "share": {
+          "$value": "{icon.action.share}",
+          "$type": "asset"
+        },
+        "star": {
+          "$value": "{icon.action.star}",
+          "$type": "asset"
+        },
+        "talk": {
+          "$value": "{icon.action.talk}",
+          "$type": "asset"
+        }
+      }
+    }
+  }
+}

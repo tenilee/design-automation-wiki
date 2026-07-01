@@ -1,0 +1,315 @@
+{
+  "icon": {
+    "action": {
+      "back": {
+        "$value": "{icon.system.chevron.leftLine}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "cart": {
+        "$value": "{icon.system.cart.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "close": {
+        "$value": "{icon.system.cancel.defaultLine}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "home": {
+        "$value": "{icon.system.home.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "menu": {
+        "$value": "{icon.system.menu.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "noti": {
+        "$value": "{icon.system.noti.defaultLine}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "setting": {
+        "$value": "{icon.system.settings.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "share": {
+        "$value": "{icon.system.share.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "star": {
+        "$value": "{icon.system.star.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "talk": {
+        "$value": "{icon.system.talk.dotsLine}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "badge": {
+      "deal": {
+        "$value": "{icon.system.deal.fill}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "ranking": {
+        "$value": "{icon.system.ranking.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "reload": {
+        "$value": "{icon.system.reload.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "content": {
+      "favorite": {
+        "$value": "{icon.system.heart.fill}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "talk": {
+        "$value": "{icon.system.talk.defaultFill}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "indicator": {
+      "chevronRight": {
+        "$value": "{icon.system.chevron.rightLine}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "placeholder": {
+      "blank": {
+        "$value": "{icon.system.blank.line}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "product": {
+        "$value": "{icon.system.symbol.thunderFill}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "store": {
+        "$value": "{icon.system.store.defaultLine}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "selection": {
+      "check": {
+        "$value": "{icon.system.check.defaultLine}",
+        "$type": "asset",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "toggle": {
+      "alarm": {
+        "off": {
+          "$value": "{icon.system.unnoti.line}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "on": {
+          "$value": "{icon.system.noti.addedLine}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      },
+      "check": {
+        "on": {
+          "$value": "{icon.system.check.defaultLine}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      },
+      "favorite": {
+        "off": {
+          "$value": "{icon.system.heart.line}",
+          "$type": "asset"
+        },
+        "on": {
+          "$value": "{icon.system.heart.fill}",
+          "$type": "asset"
+        }
+      },
+      "favoriteOverlay": {
+        "off": {
+          "$value": "{icon.system.heart.outline}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      },
+      "mute": {
+        "off": {
+          "$value": "{icon.system.mute.offFill}",
+          "$type": "asset"
+        },
+        "on": {
+          "$value": "{icon.system.mute.onFill}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -37,20 +37,24 @@ node.characters = "텍스트";
 ```
 claude-code/
 ├── CLAUDE.md                          ← 이 파일
-├── docs/                              ← Claude 참조 문서
+├── docs/                              ← Claude 참조 문서 (AI 작업용)
 │   ├── Component_Contracts.md
 │   ├── Component_Contract_Convention.md
 │   ├── Missing_Component_Workflow.md
 │   └── Figma_Design_Build_Guide.md
+├── design-spec/                       ← 개발팀+디자인팀 공유 명세
+│   ├── DESIGN_SYSTEM_SPEC.md
+│   └── Components/
+│       ├── Buttons/
+│       ├── Display/
+│       ├── Domain/
+│       ├── Layout/
+│       └── Navigation/
 ├── tokens/                            ← 토큰 파일
-│   ├── primitive_color.json
-│   ├── semantic_theme_light.json
-│   ├── semantic_theme_dark.json
-│   ├── colorMode/
-│   │   ├── light.json
-│   │   └── dark.json
-│   ├── BGZT_Token_Naming_Convention.md
-│   └── Component_Token_Naming_Convention.md
+│   └── 260701_tokens/
+│       ├── primitive/
+│       ├── semantic/
+│       └── component/
 ├── assets/                            ← 이미지 등 에셋
 │   └── sampleImage1.png
 └── archive/                           ← 구버전/더 이상 사용 안 함
@@ -75,13 +79,15 @@ claude-code/
 ### 작업 순서
 1. 명령 수신 → 작업 계획 작성 → 사용자 OK 확인
 2. `docs/Component_Contracts.md`에서 컴포넌트 Contract 확인
-3. Figma 디자인 시스템에서 컴포넌트 가져올 때 `node.description`도 함께 읽어 용도/제약사항 파악
-4. 파악한 내용을 바탕으로 화면 조합
-5. 화면 완성 후 외부 Frame 리사이즈 — `pageInst.y + pageInst.height` (statusBar 오프셋 포함)
+3. Figma 디자인 시스템에서 컴포넌트 가져올 때 `node.description`도 함께 읽어 용도/제약 파악
+4. 파일 내 아무 Page 인스턴스 클론 → 즉시 blank reset (소스 콘텐츠 무관)
+5. blank reset 상태에서 명령 기준으로 화면 구성
+6. 완성 후 Frame 리사이즈 — `pageInst.y + pageInst.height`
    ```js
    const pageInst = clone.findOne(n => n.name === "Page" && n.type === "INSTANCE");
    clone.resize(clone.width, pageInst.y + pageInst.height);
    ```
+→ 자세한 코드 패턴: `docs/Figma_Design_Build_Guide.md`
 
 ### 주의사항
 - `Status: Internal` 컴포넌트는 화면에 절대 노출하지 않는다

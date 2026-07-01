@@ -1,0 +1,28 @@
+{
+  "productThumbnail": {
+    "container": {
+      "ratio1x1": {
+        "$value": "{ratio.1x1}",
+        "$type": "text",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "ratio4x5": {
+        "$value": "{ratio.4x5}",
+        "$type": "text",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    }
+  }
+}

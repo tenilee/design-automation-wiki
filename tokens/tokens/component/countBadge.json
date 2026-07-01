@@ -1,0 +1,125 @@
+{
+  "countBadge": {
+    "border": {
+      "color": {
+        "$value": "{color.border.neutral.white}",
+        "$type": "color",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "width": {
+        "$value": "{sizing.width.thin}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "container": {
+      "color": {
+        "$value": "{color.bg.brand.solid.default}",
+        "$type": "color",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "height": {
+        "$value": "{sizing.height.xxs}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "min-width": {
+        "1digit": {
+          "$value": "{sizing.width.xs}",
+          "$type": "size",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      },
+      "padding-x": {
+        "$value": "{spacing.padding.xxxs}",
+        "$type": "space",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "radius": {
+        "$value": "{radius.full}",
+        "$type": "borderRadius",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    },
+    "label": {
+      "color": {
+        "$value": "{color.fg.neutral.onSolid.default}",
+        "$type": "color",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      },
+      "typography": {
+        "$value": "{typography.label.bold.xxs}",
+        "$type": "typography",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
+      }
+    }
+  }
+}

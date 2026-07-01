@@ -1,52 +1,80 @@
 {
   "badge": {
-    "container": {
-      "bg": {
-        "box": {
-          "brandWeak": {
-            "$value": "{color.bg.brand.weak.enabled}",
-            "$type": "color"
-          },
-          "neutralOutlined": {
-            "$value": "{color.bg.neutral.surface}",
-            "$type": "color"
-          },
-          "neutralWeak": {
-            "$value": "{color.bg.neutral.weak.enabled}",
-            "$type": "color"
-          },
-          "positiveWeak": {
-            "$value": "{color.bg.positive.weak.enabled}",
-            "$type": "color"
-          }
-        },
-        "pill": {
-          "positiveSolid": {
-            "$value": "{color.bg.positive.solid}",
-            "$type": "color"
+    "border": {
+      "color": {
+        "$value": "{color.border.neutral.subtle}",
+        "$type": "color"
+      },
+      "width": {
+        "$value": "{sizing.width.thin}",
+        "$type": "size",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
           }
         }
-      },
-      "border": {
-        "box": {
-          "neutralOutlined": {
-            "$value": "{color.border.neutral.subtle}",
-            "$type": "color"
-          }
+      }
+    },
+    "container": {
+      "color": {
+        "brandWeak": {
+          "$value": "{color.bg.brand.weak.default}",
+          "$type": "color"
+        },
+        "neutralOutline": {
+          "$value": "{color.bg.neutral.surface}",
+          "$type": "color"
+        },
+        "neutralWeak": {
+          "$value": "{color.bg.neutral.weak.default}",
+          "$type": "color"
+        },
+        "positiveSolid": {
+          "$value": "{color.bg.positive.solid}",
+          "$type": "color"
+        },
+        "positiveWeak": {
+          "$value": "{color.bg.positive.weak.default}",
+          "$type": "color"
         }
       },
       "gap-x": {
-        "size-md": {
-          "$value": "{spacing.gap-x.xxxs}",
-          "$type": "space"
-        },
-        "size-sm": {
-          "$value": "{spacing.gap-x.xxxs}",
-          "$type": "space"
-        },
-        "size-xs": {
-          "$value": "{spacing.gap-x.xxxs}",
-          "$type": "space"
+        "iconText": {
+          "size-md": {
+            "$value": "{spacing.gap-x.xxs}",
+            "$type": "space",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          },
+          "size-sm": {
+            "$value": "{spacing.gap-x.xxs}",
+            "$type": "space",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          },
+          "size-xs": {
+            "$value": "{spacing.gap-x.xxxs}",
+            "$type": "space",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          }
         }
       },
       "height": {
@@ -89,72 +117,159 @@
       }
     },
     "icon": {
-      "color": {
-        "box": {
-          "brandWeak": {
-            "$value": "{color.fg.brand.contrast.enabled}",
-            "$type": "color"
-          },
-          "neutralOutlined": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
-            "$type": "color"
-          },
-          "neutralWeak": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
-            "$type": "color"
-          },
-          "positiveWeak": {
-            "$value": "{color.fg.positive.contrast.enabled}",
-            "$type": "color"
+      "asset": {
+        "deal": {
+          "$value": "{icon.badge.deal}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
           }
         },
-        "pill": {
-          "positiveSolid": {
-            "$value": "{color.fg.positive.onSolid}",
-            "$type": "color"
+        "placeholder": {
+          "$value": "{icon.placeholder.blank}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "ranking": {
+          "$value": "{icon.badge.ranking}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "reload": {
+          "$value": "{icon.badge.reload}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      },
+      "color": {
+        "brandWeak": {
+          "$value": "{color.fg.brand.contrast.default}",
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "neutralOutline": {
+          "$value": "{color.fg.neutral.contrast.default}",
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "neutralWeak": {
+          "$value": "{color.fg.neutral.contrast.default}",
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "positiveSolid": {
+          "$value": "{color.fg.neutral.onSolid.default}",
+          "$type": "color"
+        },
+        "positiveWeak": {
+          "$value": "{color.fg.positive.contrast.default}",
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
           }
         }
       },
       "size": {
         "size-md": {
-          "$value": "{sizing.icon.xxs}",
-          "$type": "size"
+          "$value": "{sizing.height.xxxxxs}",
+          "$type": "size",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
         },
         "size-sm": {
-          "$value": "{sizing.icon.xxxs}",
-          "$type": "size"
+          "$value": "{sizing.height.xxxxxs}",
+          "$type": "size",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
         },
         "size-xs": {
-          "$value": "{sizing.icon.xxxxs}",
-          "$type": "size"
+          "$value": "{sizing.height.xxxxxxs}",
+          "$type": "size",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
         }
       }
     },
     "label": {
       "color": {
-        "box": {
-          "brandWeak": {
-            "$value": "{color.fg.brand.contrast.enabled}",
-            "$type": "color"
-          },
-          "neutralOutlined": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
-            "$type": "color"
-          },
-          "neutralWeak": {
-            "$value": "{color.fg.neutral.contrast.enabled}",
-            "$type": "color"
-          },
-          "positiveWeak": {
-            "$value": "{color.fg.positive.contrast.enabled}",
-            "$type": "color"
-          }
+        "brandWeak": {
+          "$value": "{color.fg.brand.contrast.default}",
+          "$type": "color"
         },
-        "pill": {
-          "positiveSolid": {
-            "$value": "{color.fg.positive.onSolid}",
-            "$type": "color"
-          }
+        "neutralOutline": {
+          "$value": "{color.fg.neutral.contrast.default}",
+          "$type": "color"
+        },
+        "neutralWeak": {
+          "$value": "{color.fg.neutral.contrast.default}",
+          "$type": "color"
+        },
+        "positiveSolid": {
+          "$value": "{color.fg.neutral.onSolid.default}",
+          "$type": "color"
+        },
+        "positiveWeak": {
+          "$value": "{color.fg.positive.contrast.default}",
+          "$type": "color"
         }
       },
       "typography": {

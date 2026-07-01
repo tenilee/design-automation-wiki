@@ -40,6 +40,19 @@
       "$value": "16px",
       "$type": "size"
     },
+    "17": {
+      "$value": "17px",
+      "$type": "size",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
     "18": {
       "$value": "18px",
       "$type": "size"

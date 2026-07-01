@@ -7,12 +7,36 @@
       }
     },
     "icon": {
+      "asset": {
+        "favorite": {
+          "$value": "{icon.content.favorite}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "talk": {
+          "$value": "{icon.content.talk}",
+          "$type": "asset",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      },
       "color": {
         "$value": "{color.fg.neutral.ghost}",
         "$type": "color"
       },
       "size": {
-        "$value": "{sizing.icon.xxs}",
+        "$value": "{sizing.height.xxxxs}",
         "$type": "size"
       }
     },
@@ -22,7 +46,7 @@
         "$type": "color"
       },
       "typography": {
-        "$value": "{typography.body.sm}",
+        "$value": "{typography.body6}",
         "$type": "typography"
       }
     }

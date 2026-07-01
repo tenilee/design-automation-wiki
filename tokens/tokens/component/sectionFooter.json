@@ -1,0 +1,19 @@
+{
+  "sectionFooter": {
+    "container": {
+      "padding-y": {
+        "button": {
+          "$value": "{spacing.padding.xl}",
+          "$type": "space",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

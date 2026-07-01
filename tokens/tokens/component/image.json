@@ -1,18 +1,64 @@
 {
   "image": {
-    "container": {
-      "bg": {
-        "placeholder": {
-          "$value": "{color.bg.neutral.weak.enabled}",
-          "$type": "color"
-        }
-      }
-    },
-    "icon": {
+    "placeholder": {
       "color": {
-        "placeholder": {
+        "$value": "{color.bg.neutral.weak.default}",
+        "$type": "color"
+      },
+      "icon": {
+        "asset": {
+          "product": {
+            "$value": "{icon.placeholder.product}",
+            "$type": "asset",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          },
+          "store": {
+            "$value": "{icon.placeholder.store}",
+            "$type": "asset",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          }
+        },
+        "color": {
           "$value": "{color.fg.neutral.ghost}",
           "$type": "color"
+        },
+        "ratio": {
+          "$value": "{ratio.scale.0_3}",
+          "$type": "text",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      },
+      "ratio": {
+        "$value": "{ratio.1}",
+        "$type": "text",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
         }
       }
     }

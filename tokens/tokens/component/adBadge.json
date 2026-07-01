@@ -1,9 +1,9 @@
 {
   "adBadge": {
     "container": {
-      "bg": {
+      "color": {
         "overlay": {
-          "$value": "{color.bg.neutral.weak.enabled}",
+          "$value": "{color.bg.neutral.weak.default}",
           "$type": "color"
         }
       },

@@ -3,6 +3,10 @@
     "bg": {
       "brand": {
         "solid": {
+          "default": {
+            "$value": "{color.red.500}",
+            "$type": "color"
+          },
           "disabled": {
             "$value": "{color.red.50}",
             "$type": "color",
@@ -16,21 +20,17 @@
               }
             }
           },
-          "enabled": {
-            "$value": "{color.red.500}",
-            "$type": "color"
-          },
           "pressed": {
             "$value": "{color.red.600}",
             "$type": "color"
           }
         },
         "weak": {
-          "disabled": {
+          "default": {
             "$value": "{color.red.50}",
             "$type": "color"
           },
-          "enabled": {
+          "disabled": {
             "$value": "{color.red.50}",
             "$type": "color"
           },
@@ -42,12 +42,12 @@
       },
       "neutral": {
         "solid": {
-          "disabled": {
-            "$value": "{color.gray.100}",
+          "default": {
+            "$value": "{color.gray.900}",
             "$type": "color"
           },
-          "enabled": {
-            "$value": "{color.gray.900}",
+          "disabled": {
+            "$value": "{color.gray.100}",
             "$type": "color"
           },
           "pressed": {
@@ -60,11 +60,11 @@
           "$type": "color"
         },
         "weak": {
-          "disabled": {
+          "default": {
             "$value": "{color.gray.50}",
             "$type": "color"
           },
-          "enabled": {
+          "disabled": {
             "$value": "{color.gray.50}",
             "$type": "color"
           },
@@ -80,11 +80,11 @@
           "$type": "color"
         },
         "weak": {
-          "disabled": {
+          "default": {
             "$value": "{color.green.50}",
             "$type": "color"
           },
-          "enabled": {
+          "disabled": {
             "$value": "{color.green.50}",
             "$type": "color"
           },
@@ -100,18 +100,29 @@
         "subtle": {
           "$value": "{color.gray.100}",
           "$type": "color"
+        },
+        "white": {
+          "$value": "{color.gray.0}",
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
         }
       }
     },
     "fg": {
       "brand": {
         "contrast": {
-          "disabled": {
-            "$value": "{color.red.200}",
+          "default": {
+            "$value": "{color.red.500}",
             "$type": "color"
           },
-          "enabled": {
-            "$value": "{color.red.500}",
+          "disabled": {
+            "$value": "{color.red.200}",
             "$type": "color"
           },
           "pressed": {
@@ -120,11 +131,11 @@
           }
         },
         "onSolid": {
-          "disabled": {
+          "default": {
             "$value": "{color.gray.0}",
             "$type": "color"
           },
-          "enabled": {
+          "disabled": {
             "$value": "{color.gray.0}",
             "$type": "color"
           },
@@ -136,12 +147,12 @@
       },
       "neutral": {
         "contrast": {
-          "disabled": {
-            "$value": "{color.gray.200}",
+          "default": {
+            "$value": "{color.gray.700}",
             "$type": "color"
           },
-          "enabled": {
-            "$value": "{color.gray.700}",
+          "disabled": {
+            "$value": "{color.gray.200}",
             "$type": "color"
           },
           "pressed": {
@@ -162,12 +173,25 @@
           "$value": "{color.gray.600}",
           "$type": "color"
         },
+        "onOverlay": {
+          "weak": {
+            "$value": "{color.black.a10}",
+            "$type": "color",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          }
+        },
         "onSolid": {
-          "disabled": {
+          "default": {
             "$value": "{color.gray.0}",
             "$type": "color"
           },
-          "enabled": {
+          "disabled": {
             "$value": "{color.gray.0}",
             "$type": "color"
           },
@@ -199,12 +223,12 @@
       },
       "positive": {
         "contrast": {
-          "disabled": {
-            "$value": "{color.green.200}",
+          "default": {
+            "$value": "{color.green.600}",
             "$type": "color"
           },
-          "enabled": {
-            "$value": "{color.green.600}",
+          "disabled": {
+            "$value": "{color.green.200}",
             "$type": "color"
           },
           "pressed": {
@@ -215,6 +239,36 @@
         "onSolid": {
           "$value": "{color.gray.0}",
           "$type": "color"
+        }
+      }
+    },
+    "gradient": {
+      "shade": {
+        "transparent": {
+          "$value": "{color.white.a0}",
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        },
+        "weak": {
+          "$value": "{color.black.a10}",
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
         }
       }
     },

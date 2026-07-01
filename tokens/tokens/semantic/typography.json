@@ -1,33 +1,91 @@
 {
   "typography": {
+    "body1": {
+      "$value": {
+        "fontSize": "{font.size.16}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.500}",
+        "lineHeight": "{font.lineHeight.150}"
+      },
+      "$type": "typography",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "body2": {
+      "$value": {
+        "fontSize": "{font.size.15}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.500}",
+        "lineHeight": "{font.lineHeight.145}",
+        "letterSpacing": "0px"
+      },
+      "$type": "typography",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "body3": {
+      "$value": {
+        "fontSize": "{font.size.14}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.145}",
+        "letterSpacing": "0px"
+      },
+      "$type": "typography",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "body4": {
+      "$value": {
+        "fontSize": "{font.size.14}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.500}",
+        "lineHeight": "{font.lineHeight.150}"
+      },
+      "$type": "typography"
+    },
+    "body5": {
+      "$value": {
+        "fontSize": "{font.size.13}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.140}",
+        "letterSpacing": "0px"
+      },
+      "$type": "typography",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "body6": {
+      "$value": {
+        "fontSize": "{font.size.13}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.500}",
+        "lineHeight": "{font.lineHeight.140}"
+      },
+      "$type": "typography"
+    },
     "body": {
-      "lg": {
-        "$value": {
-          "fontSize": "{font.size.16}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.500}",
-          "lineHeight": "{font.lineHeight.150}"
-        },
-        "$type": "typography"
-      },
-      "md": {
-        "$value": {
-          "fontSize": "{font.size.14}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.500}",
-          "lineHeight": "{font.lineHeight.150}"
-        },
-        "$type": "typography"
-      },
-      "sm": {
-        "$value": {
-          "fontSize": "{font.size.13}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.500}",
-          "lineHeight": "{font.lineHeight.140}"
-        },
-        "$type": "typography"
-      },
       "xs": {
         "$value": {
           "fontSize": "{font.size.12}",
@@ -167,34 +225,51 @@
         }
       }
     },
+    "subTitle1": {
+      "$value": {
+        "fontSize": "{font.size.20}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.130}",
+        "letterSpacing": "0px"
+      },
+      "$type": "typography",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "subTitle2": {
+      "$value": {
+        "fontSize": "{font.size.18}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.140}"
+      },
+      "$type": "typography"
+    },
+    "subTitle3": {
+      "$value": {
+        "fontSize": "{font.size.16}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.145}"
+      },
+      "$type": "typography"
+    },
+    "subTitle4": {
+      "$value": {
+        "fontSize": "{font.size.14}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.150}"
+      },
+      "$type": "typography"
+    },
     "subtitle": {
-      "lg": {
-        "$value": {
-          "fontSize": "{font.size.18}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.700}",
-          "lineHeight": "{font.lineHeight.140}"
-        },
-        "$type": "typography"
-      },
-      "md": {
-        "$value": {
-          "fontSize": "{font.size.16}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.700}",
-          "lineHeight": "{font.lineHeight.150}"
-        },
-        "$type": "typography"
-      },
-      "sm": {
-        "$value": {
-          "fontSize": "{font.size.14}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.700}",
-          "lineHeight": "{font.lineHeight.150}"
-        },
-        "$type": "typography"
-      },
       "xl": {
         "$value": {
           "fontSize": "{font.size.22}",
@@ -205,33 +280,63 @@
         "$type": "typography"
       }
     },
-    "title": {
-      "md": {
-        "$value": {
-          "fontSize": "{font.size.24}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.700}",
-          "lineHeight": "{font.lineHeight.130}"
-        },
-        "$type": "typography"
+    "title1": {
+      "$value": {
+        "fontSize": "{font.size.34}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.105}",
+        "letterSpacing": "0px"
       },
-      "sm": {
-        "$value": {
-          "fontSize": "{font.size.22}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.700}",
-          "lineHeight": "{font.lineHeight.100}"
-        },
-        "$type": "typography"
+      "$type": "typography",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "title2": {
+      "$value": {
+        "fontSize": "{font.size.28}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.125}",
+        "letterSpacing": "0px"
       },
-      "xs": {
-        "$value": {
-          "fontSize": "{font.size.18}",
-          "fontFamily": "{font.family.pretendard}",
-          "fontWeight": "{font.weight.700}",
-          "lineHeight": "{font.lineHeight.100}"
-        },
-        "$type": "typography"
+      "$type": "typography",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
+      }
+    },
+    "title3": {
+      "$value": {
+        "fontSize": "{font.size.24}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.130}"
+      },
+      "$type": "typography"
+    },
+    "title4": {
+      "$value": {
+        "fontSize": "{font.size.22}",
+        "fontFamily": "{font.family.pretendard}",
+        "fontWeight": "{font.weight.700}",
+        "lineHeight": "{font.lineHeight.130}"
+      },
+      "$type": "typography",
+      "$extensions": {
+        "com.figma": {
+          "scopes": [],
+          "codeSyntax": {},
+          "hiddenFromPublishing": false
+        }
       }
     }
   }

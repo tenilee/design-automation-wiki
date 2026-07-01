@@ -12,8 +12,15 @@
         }
       },
       "padding-y": {
-        "$value": "{spacing.padding.none}",
-        "$type": "space"
+        "$value": "{spacing.padding.xl}",
+        "$type": "space",
+        "$extensions": {
+          "com.figma": {
+            "scopes": [],
+            "codeSyntax": {},
+            "hiddenFromPublishing": false
+          }
+        }
       }
     },
     "title": {
@@ -22,7 +29,7 @@
         "$type": "color"
       },
       "typography": {
-        "$value": "{typography.subtitle.lg}",
+        "$value": "{typography.subTitle2}",
         "$type": "typography"
       }
     }

@@ -135,7 +135,7 @@ targetItem.swapComponent(newComp);
 | NavBar 좌측 아이템 | `leftItem1` | 아이템 인스턴스 findOne → swapComponent |
 | Section headerSlot | `headerSlot` | slot.children[0] → swapComponent |
 | Section contentSlot | `contentSlot` | slot.children[0] → swapComponent |
-| DSIcon 아이콘 교체 | `tintedIcon`, `originalIcon` | 아이콘 인스턴스 findOne → swapComponent |
+| Icon 아이콘 교체 | `icon` | 아이콘 인스턴스 findOne → swapComponent |
 
 ### VARIANT / TEXT 타입은 setProperties 사용 가능
 
@@ -194,7 +194,7 @@ const headerInst = headerSlot.children[0];
 
 if (headerInst.type === "INSTANCE") {
   const sectionHeaderSet = await figma.importComponentSetByKeyAsync("SECTION_HEADER_KEY");
-  const baseVariant = sectionHeaderSet.children.find(c => c.name.includes("variant=base"));
+  const baseVariant = sectionHeaderSet.children.find(c => c.name.includes("variant=titleOnly"));
   headerInst.swapComponent(baseVariant); // ✅ sectionHeader로 교체
 }
 ```
@@ -348,10 +348,10 @@ appendChild: unloaded font "Pretendard Variable Bold"
 - `showHeader` / `showFooter`: 항상 명시적으로 설정 (기본값에 의존하지 않음)
 - SLOT 안 노드 타입 확인 필수: INSTANCE면 swapComponent, FRAME이면 remove 후 재배치
 
-### DSIcon
+### Icon
 
 - 컴포넌트화 대상이 아닌 1회성 커스텀 슬롯에서만 사용한다.
-- Button, Navigation Bar, Toggle, Badge 등 기존 컴포넌트 내부 아이콘에는 직접 사용하지 않는다.
+- Button, NavigationBar, Toggle, Badge 등 기존 컴포넌트 내부 아이콘에는 직접 사용하지 않는다.
 - 반복 사용되거나 2개 이상 화면에서 재사용될 가능성이 있는 아이콘 UI는 별도 컴포넌트화를 검토한다.
 - `icon`은 INSTANCE_SWAP으로 교체한다.
 - `sic.*`: tint 적용 대상인 단색 시스템 아이콘 — `tint=neutral | brand | positive | inverse` 사용

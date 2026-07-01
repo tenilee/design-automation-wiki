@@ -35,7 +35,7 @@
     "discountRate": {
       "label": {
         "color": {
-          "$value": "{color.fg.brand.contrast.enabled}",
+          "$value": "{color.fg.brand.contrast.default}",
           "$type": "color"
         },
         "typography": {
@@ -53,8 +53,58 @@
     "favoriteToggle": {
       "container": {
         "size": {
-          "$value": "{sizing.height.md}",
+          "$value": "{sizing.height.xl}",
           "$type": "size"
+        }
+      },
+      "icon": {
+        "asset": {
+          "off": {
+            "$value": "{icon.toggle.favoriteOverlay.off}",
+            "$type": "asset",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          },
+          "on": {
+            "$value": "{icon.toggle.favorite.on}",
+            "$type": "asset",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          }
+        },
+        "color": {
+          "off": {
+            "$value": "{color.fg.neutral.onSolid.default}",
+            "$type": "color",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          },
+          "on": {
+            "$value": "{color.fg.brand.contrast.default}",
+            "$type": "color",
+            "$extensions": {
+              "com.figma": {
+                "scopes": [],
+                "codeSyntax": {},
+                "hiddenFromPublishing": false
+              }
+            }
+          }
         }
       }
     },
@@ -76,11 +126,11 @@
       "label": {
         "typography": {
           "threeColumn": {
-            "$value": "{typography.body.sm}",
+            "$value": "{typography.body6}",
             "$type": "typography"
           },
           "twoColumn": {
-            "$value": "{typography.body.md}",
+            "$value": "{typography.body4}",
             "$type": "typography"
           }
         }
@@ -112,11 +162,35 @@
         }
       }
     },
+    "subInfo": {
+      "container": {
+        "gap-x": {
+          "$value": "{spacing.gap-x.xs}",
+          "$type": "space",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
+        }
+      }
+    },
     "thumbnail": {
       "container": {
         "radius": {
           "$value": "{radius.sm}",
-          "$type": "borderRadius"
+          "$type": "borderRadius",
+          "$extensions": {
+            "com.figma": {
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {},
+              "hiddenFromPublishing": false
+            }
+          }
         }
       }
     },
@@ -125,6 +199,14 @@
         "color": {
           "$value": "{color.fg.neutral.muted}",
           "$type": "color"
+        }
+      }
+    },
+    "todayDealBadge": {
+      "container": {
+        "height": {
+          "$value": "{sizing.height.xxxxs}",
+          "$type": "size"
         }
       }
     }
